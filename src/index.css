@@ -1,0 +1,91 @@
+/* ─── Tailwind v4 ─── */
+@import "tailwindcss";
+
+/* ─── Design tokens ─── */
+@theme {
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body:    "Manrope", system-ui, sans-serif;
+
+  /* Core palette */
+  --color-bg:            #F8F5EF;
+  --color-surface:       #F0EBE2;
+  --color-surface-card:  #EDE7DE;
+  --color-text:          #1C1916;
+  --color-muted:         #7A726A;
+  --color-border:        #DDD6CE;
+
+  /* Accent: deep teal */
+  --color-accent:        #2A6B57;
+  --color-accent-light:  #358870;
+  --color-accent-dim:    rgba(42, 107, 87, 0.12);
+
+  /* Warm: burnt orange */
+  --color-warm:          #C05A2A;
+  --color-warm-light:    #D4693A;
+  --color-warm-dim:      rgba(192, 90, 42, 0.12);
+
+  /* Brass */
+  --color-brass:         #8B6914;
+
+  /* Dark sections */
+  --color-dark:          #1C1916;
+  --color-dark-surface:  #252220;
+  --color-dark-muted:    #8A8480;
+  --color-dark-border:   #3A3632;
+}
+
+/* ─── Global base styles ─── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  #root {
+    min-height: 100svh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
