@@ -32,7 +32,7 @@ export function Capabilities() {
         {/* ── Grid ── */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {CAPABILITIES.map((cap, i) => (
-            <FadeIn key={cap.title} delay={i * 0.06}>
+            <FadeIn key={cap.title} delay={i * 0.06} className="h-full">
               <CapabilityCard
                 icon={cap.icon}
                 title={cap.title}
@@ -54,7 +54,7 @@ interface CapabilityCardProps {
 
 function CapabilityCard({ icon, title, description }: CapabilityCardProps) {
   return (
-    <div className="group p-6 rounded-2xl bg-bg border border-border hover:border-accent/40 hover:shadow-sm transition-all duration-300 flex flex-col gap-4">
+    <div className="group h-full p-6 rounded-2xl bg-bg border border-border hover:border-accent/40 hover:shadow-sm transition-all duration-300 flex flex-col gap-4">
       {/* Icon */}
       <div
         className="w-10 h-10 rounded-xl flex items-center justify-center transition-colors duration-300"

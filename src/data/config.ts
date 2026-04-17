@@ -32,10 +32,11 @@ export const SITE = {
 
   // ── Navigation ────────────────────────────
   navLinks: [
-    { label: "About",        href: "#about"      },
-    { label: "Tuon",         href: "#project"    },
-    { label: "Capabilities", href: "#capabilities" },
-    { label: "Contact",      href: "#contact"    },
+    { label: "About",        href: "#about"        },
+    { label: "Tuon",         href: "#project"      },
+    { label: "Projects",     href: "#other-projects" },
+    { label: "Capabilities", href: "#capabilities"  },
+    { label: "Contact",      href: "#contact"      },
   ],
 };
 
@@ -203,10 +204,31 @@ export const ABOUT = {
   short:
     "I'm a student and founder based in Cebu, Philippines. I started building Tuon because I wanted a study tool that actually worked, and because I wanted to know if I could ship a real product from scratch.",
   extended: [
+    "Outside of building Tuon, I've been involved in projects for my university department and served as a student leader in the SBO. I've been on the Dean's List and graduated with honors, though I take more pride in what I've shipped than the grades on the paper.",
     "What I've found is that building software seriously is its own education. Every product decision forces clarity. Every integration teaches you something new. Every user interaction shows you where you made the wrong assumption.",
     "I work across the full product surface: frontend code, database design, API integrations, payment flows, legal pages, deployment, and the operational discipline that any real software requires. Not because I can do everything perfectly, but because understanding the whole system makes every part of it better.",
-    "This is early in the journey. But the work is real, and that's what matters right now.",
   ],
-  // Profile photo — placed in public/ProfilePic.jpg
+  tags: [
+    "Student Founder",
+    "Dean's Lister",
+    "Honor Student",
+    "Student Leader",
+    "Cebu, Philippines",
+    "Education Technology",
+  ],
+  // Profile photo placed in public/ProfilePic.jpg
   photo: "/ProfilePic.jpg" as string | null,
 };
+
+// ── Other Projects ──────────────────────────
+export const OTHER_PROJECTS = [
+  {
+    title: "PSITS Voting System",
+    description:
+      "An online voting platform built for the Philippine Society of Information Technology Students at my university. Used by the department to elect new officers each year. Built as a collaborative project with fellow developers.",
+    url: "https://psits-voting.vercel.app",
+    role: "Co-developer",
+    tags: ["React", "Vercel", "Collaborative"],
+    status: "Live",
+  },
+];

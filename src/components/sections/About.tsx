@@ -87,12 +87,7 @@ export function About() {
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2 pt-2">
-                {[
-                  "Student Founder",
-                  "Cebu, Philippines",
-                  "Education Technology",
-                  "Solodev",
-                ].map((tag) => (
+                {ABOUT.tags.map((tag) => (
                   <span
                     key={tag}
                     className="inline-flex items-center px-3 py-1.5 rounded-full border border-border bg-bg text-xs font-body font-medium text-muted"
