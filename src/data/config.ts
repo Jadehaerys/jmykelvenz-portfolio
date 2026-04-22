@@ -231,4 +231,13 @@ export const OTHER_PROJECTS = [
     tags: ["React", "Vercel", "Collaborative"],
     status: "Live",
   },
+  {
+    title: "Freesoul Cyber Gadgets",
+    description:
+      "Website for a gadget and electronics repair shop based in Cebu, Philippines. Covers phone, laptop, camera, and gaming console repairs. Freesoul holds TESDA NC2 Electronics Repair certification and an NTC Mobile Phone Service Center Permit, and is the only camera shop inside a mall in Cebu offering DSLR and mirrorless camera repairs.",
+    url: "https://freesoul-ph.vercel.app",
+    role: "Web Designer & Developer",
+    tags: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    status: "Live",
+  },
 ];
