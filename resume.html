@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jade Mykel R. Ventic � Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* -- Page setup --------------------------- */
+    @page {
+      size: Letter portrait;
+      margin: 0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 8.5pt;
+      line-height: 1.45;
+      color: #1C1916;
+      background: #fff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* -- Layout -------------------------------- */
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* -- Header ------------------------------- */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: #2A6B57;
+      color: #fff;
+      padding: 20px 28px;
+      border-radius: 0;
+    }
+
+    .header-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 15%;
+      border: 3px solid rgba(255,255,255,0.5);
+      flex-shrink: 0;
+    }
+
+    .header-info { flex: 1; }
+
+    .header-name {
+      font-size: 19pt;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      line-height: 1.1;
+      color: #fff;
+    }
+
+    .header-title {
+      font-size: 9pt;
+      opacity: 0.85;
+      margin-top: 2px;
+      margin-bottom: 6px;
+    }
+
+    .header-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px 16px;
+      font-size: 7.5pt;
+      opacity: 0.9;
+    }
+
+    .header-contacts a { color: #fff; text-decoration: none; }
+
+    /* -- Body columns -------------------------- */
+    .body {
+      display: flex;
+      flex: 1;
+      min-height: 0;
+      gap: 0;
+      border: none;
+      overflow: hidden;
+    }
+
+    /* -- Left sidebar -------------------------- */
+    .sidebar {
+      width: 2.3in;
+      flex-shrink: 0;
+      background: #F0EBE2;
+      padding: 16px 16px;
+      border-right: 1px solid #DDD6CE;
+      overflow: hidden;
+    }
+
+    /* -- Main content -------------------------- */
+    .main {
+      flex: 1;
+      min-width: 0;
+      padding: 16px 20px;
+      background: #F8F5EF;
+      overflow: hidden;
+    }
+
+    /* -- Section headings ---------------------- */
+    .section-title {
+      font-size: 7pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #C05A2A;
+      margin-bottom: 6px;
+      padding-bottom: 3px;
+      border-bottom: 1.5px solid #DDD6CE;
+    }
+
+    .section { margin-bottom: 13px; }
+
+    /* -- Skills -------------------------------- */
+    .skill-item { margin-bottom: 5px; }
+
+    .skill-name {
+      font-size: 8pt;
+      font-weight: 600;
+      color: #2A6B57;
+    }
+
+    .skill-detail {
+      font-size: 7.5pt;
+      color: #7A726A;
+    }
+
+    /* -- Education ----------------------------- */
+    .edu-item {
+      font-size: 8pt;
+      margin-bottom: 4px;
+      color: #1C1916;
+    }
+
+    .edu-item span { font-weight: 600; }
+
+    /* -- Values -------------------------------- */
+    .value-item {
+      font-size: 7.8pt;
+      padding: 3px 0 3px 8px;
+      color: #1C1916;
+      border-left: 2px solid #2A6B57;
+      margin-bottom: 4px;
+    }
+
+    /* -- Profile text -------------------------- */
+    .profile-text {
+      font-size: 8.5pt;
+      color: #1C1916;
+      line-height: 1.5;
+    }
+
+    /* -- Projects ------------------------------ */
+    .project {
+      margin-bottom: 9px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #DDD6CE;
+    }
+
+    .project:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .project-header {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .project-title {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #2A6B57;
+    }
+
+    .project-role {
+      font-size: 7.5pt;
+      color: #7A726A;
+    }
+
+    .project-url {
+      font-size: 7.5pt;
+      color: #C05A2A;
+      text-decoration: none;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    .project-desc {
+      font-size: 8pt;
+      color: #1C1916;
+      margin-top: 2px;
+      line-height: 1.45;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      margin-top: 4px;
+    }
+
+    .tag {
+      font-size: 7pt;
+      font-weight: 600;
+      background: #EDE7DE;
+      color: #2A6B57;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    /* -- Screen preview ------------------------ */
+    @media screen {
+      body { background: #888; padding: 24px; }
+      .page { box-shadow: 0 4px 32px rgba(0,0,0,0.25); }
+    }
+
+    /* -- Print overrides ----------------------- */
+    @media print {
+      html, body {
+        height: 100%;
+        background: #fff !important;
+        padding: 0;
+        margin: 0;
+      }
+      .page {
+        width: 100%;
+        height: 100%;
+        min-height: unset;
+        margin: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .header { border-radius: 0 !important; flex-shrink: 0; }
+      .body {
+        border-radius: 0 !important;
+        flex: 1;
+        min-height: 0;
+        display: flex;
+        border: none;
+      }
+      .sidebar {
+        background: #F0EBE2 !important;
+        overflow: hidden;
+      }
+      .main {
+        background: #F8F5EF !important;
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="public/Resume.jpg" alt="Jade Mykel R. Ventic" class="header-photo" />
+      <div class="header-info">
+        <div class="header-name">Jade Mykel R. Ventic</div>
+        <div class="header-title">Student Founder &amp; Developer &nbsp;&middot;&nbsp; Cebu, Philippines &nbsp;&middot;&nbsp; <span style="opacity:0.75;">Available for freelance &amp; collaborations</span></div>
+        <div class="header-contacts">
+          <span>&#128222; +63 991 569 6218</span>
+          <a href="mailto:jmykelvenz@gmail.com">jmykelvenz@gmail.com</a>
+          <a href="https://github.com/Jadehaerys">github.com/Jadehaerys</a>
+          <a href="https://jmykelvenz-portfolio.vercel.app">jmykelvenz-portfolio.vercel.app</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="body">
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+
+        <div class="section">
+          <div class="section-title">Skills</div>
+          <div class="skill-item">
+            <div class="skill-name">Frontend Development</div>
+            <div class="skill-detail">React, Vite, TypeScript, Tailwind CSS, Framer Motion</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Interface Design Thinking</div>
+            <div class="skill-detail">UX flows, information architecture, visual hierarchy</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Auth &amp; Account Flows</div>
+            <div class="skill-detail">Supabase, session management, user lifecycle</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">AI-Powered Workflows</div>
+            <div class="skill-detail">LLM integration, Groq API, structured prompting</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Payment Integration</div>
+            <div class="skill-detail">PayMongo, subscriptions, credit top-ups</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Deployment &amp; Ops</div>
+            <div class="skill-detail">Vercel, environment management, production uptime</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Privacy &amp; Compliance</div>
+            <div class="skill-detail">Legal pages, PDPA-aware data handling</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Product Thinking</div>
+            <div class="skill-detail">Feature scoping, tradeoffs, full-cycle execution</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Programming Languages</div>
+            <div class="skill-detail">Java, C#, Python, JavaScript, TypeScript</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Database &amp; Tools</div>
+            <div class="skill-detail">MySQL, SQLite, Git, Figma, Canva</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Languages</div>
+            <div class="skill-detail">English, Filipino, Bisaya &mdash; Fluent</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="edu-item" style="margin-bottom:7px;">
+            <span>BS Information Technology</span>
+            <div style="font-size:7.5pt; color:#7A726A;">University of Cebu Lapu-Lapu &amp; Mandaue</div>
+            <div style="font-size:7.5pt; color:#7A726A;">2023 &ndash; Present &nbsp;&bull;&nbsp; GWA: 1.3</div>
+            <div style="font-size:7.5pt; color:#2A6B57;">Dean&rsquo;s Lister &bull; Student Leader / SBO</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:7px;">
+            <span>Senior High School</span>
+            <div style="font-size:7.5pt; color:#7A726A;">University of Cebu Lapu-Lapu &amp; Mandaue</div>
+            <div style="font-size:7.5pt; color:#2A6B57;">Graduated with Honors</div>
+          </div>
+          <div class="edu-item">
+            <span>Junior High School</span>
+            <div style="font-size:7.5pt; color:#7A726A;">University of Cebu Lapu-Lapu &amp; Mandaue</div>
+            <div style="font-size:7.5pt; color:#2A6B57;">Graduated with Honors &bull; Top Scorer, Deptl. Exams</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Principles</div>
+          <div class="value-item">Build things that are actually useful</div>
+          <div class="value-item">Reduce friction at every step</div>
+          <div class="value-item">Ship with intention, not just speed</div>
+          <div class="value-item">Design for the person using it</div>
+          <div class="value-item">Own the full stack</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Certifications</div>
+          <div class="edu-item" style="margin-bottom:5px;">
+            <span>Cisco Cybersecurity</span>
+            <div style="font-size:7.5pt; color:#7A726A;">Introduction to Cybersecurity &mdash; Cisco</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAIN -->
+      <div class="main">
+
+        <div class="section">
+          <div class="section-title">Profile</div>
+          <div class="profile-text">
+            Student founder and developer passionate about building education technology that gets used. Experienced in shipping real products from scratch from frontend development to deployment, payments, and compliance. Dean&rsquo;s Lister, honor graduate, and student leader who takes more pride in what&rsquo;s shipped than grades on paper.
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Projects</div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">Tuon</span>
+              <span class="project-role">Founder &amp; Developer</span>
+              <a class="project-url" href="https://tuon.net">tuon.net</a>
+            </div>
+            <div class="project-desc">
+              AI-powered study platform that transforms any learning material into active practice. Generates flashcards and quizzes from typed topics, PDFs, or YouTube links. Features AI tutor chat, study decks, subscription billing, and privacy-first architecture. Built and deployed end-to-end solo.
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Groq</span>
+              <span class="tag">PayMongo</span>
+              <span class="tag">Vercel</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">PSITS Voting System</span>
+              <span class="project-role">Co-developer</span>
+              <a class="project-url" href="https://psits-voting.vercel.app">psits-voting.vercel.app</a>
+            </div>
+            <div class="project-desc">
+              Online voting platform for the Philippine Society of IT Students at my university. Used for annual officer elections. Collaborative project.
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Vercel</span>
+              <span class="tag">Collaborative</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">HR System Dashboard</span>
+              <span class="project-role">Course Project</span>
+            </div>
+            <div class="project-desc">
+              Full-featured dashboard interface with user filters and profile cards. Implements complete CRUD operations connected to a MySQL database with a modern interactive UI layout.
+            </div>
+            <div class="project-tags">
+              <span class="tag">C# WinForms</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">CRUD</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">Help the Lady Cross the Road</span>
+              <span class="project-role">Java GUI Project</span>
+            </div>
+            <div class="project-desc">
+              Interactive Java GUI game built with JFrame, JPanel, CardLayout, and JSwing. Features logic separation, image rendering, and custom button alignment.
+            </div>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">JSwing</span>
+              <span class="tag">JFrame</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">Freesoul Cyber Gadgets</span>
+              <span class="project-role">Web Designer &amp; Developer</span>
+              <a class="project-url" href="https://freesoul-ph.vercel.app">freesoul-ph.vercel.app</a>
+            </div>
+            <div class="project-desc">
+              Website for a TESDA NC2-certified electronics repair shop in Cebu. The only mall-based camera repair center offering DSLR and mirrorless servicing. Holds an NTC Mobile Phone Service Center Permit.
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Framer Motion</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
