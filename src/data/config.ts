@@ -240,4 +240,13 @@ export const OTHER_PROJECTS = [
     tags: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
     status: "Live",
   },
+  {
+    title: "S&R Pastry Shop",
+    description:
+      "A high-performance e-commerce web app for a Cebu-based bakery with a 'Premium & Bubbly' aesthetic. Features a custom checkout flow that formats and copies order details to the clipboard before redirecting to Facebook Messenger — bridging the gap between a polished web store and the shop's GCash/Messenger workflow. Includes real-time store status (PST), persistent cart via LocalStorage, staggered Framer Motion animations, Quick View modals, category filtering, and minimum order logic.",
+    url: "https://s-and-r-pastry-shop.vercel.app",
+    role: "Web Designer & Developer",
+    tags: ["Next.js 14", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    status: "Live",
+  },
 ];

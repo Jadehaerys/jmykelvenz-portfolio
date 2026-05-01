@@ -224,6 +224,31 @@
       border-radius: 3px;
     }
 
+    /* -- Download button ----------------------- */
+    .download-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #2A6B57;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 18px;
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 8.5pt;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 12px rgba(42,107,87,0.25);
+      letter-spacing: 0.2px;
+      transition: background 0.15s;
+    }
+    .download-btn:hover { background: #1e5040; }
+    @media print { .download-btn { display: none !important; } }
+
     /* -- Screen preview ------------------------ */
     @media screen {
       body { background: #888; padding: 24px; }
@@ -268,6 +293,10 @@
   </style>
 </head>
 <body>
+  <button class="download-btn" onclick="window.print()" aria-label="Print or Save as PDF">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Save as PDF
+  </button>
   <div class="page">
 
     <!-- HEADER -->
@@ -465,6 +494,25 @@
               <span class="tag">Java</span>
               <span class="tag">JSwing</span>
               <span class="tag">JFrame</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">S&amp;R Pastry Shop</span>
+              <span class="project-role">Web Designer &amp; Developer</span>
+              <a class="project-url" href="https://s-and-r-pastry-shop.vercel.app">s-and-r-pastry-shop.vercel.app</a>
+            </div>
+            <div class="project-desc">
+              High-performance e-commerce web app for a Cebu-based bakery. Custom checkout flow formats order details to the clipboard before redirecting to Facebook Messenger &mdash; bridging a polished web store with the shop&rsquo;s GCash/Messenger workflow. Features real-time store status (PST), persistent cart via LocalStorage, Framer Motion animations, Quick View modals, and category filtering.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">• Solved Messenger deep-link limitation with a clipboard-based order handoff<br>• Zero-backend architecture fitted to a small business&rsquo;s existing workflow</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Next.js 14</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Framer Motion</span>
+              <span class="tag">Vercel</span>
             </div>
           </div>
 
