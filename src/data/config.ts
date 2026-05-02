@@ -249,4 +249,22 @@ export const OTHER_PROJECTS = [
     tags: ["Next.js 14", "TypeScript", "Tailwind CSS", "Framer Motion"],
     status: "Live",
   },
+  {
+    title: "BST Sweetbakes",
+    description:
+      "A premium digital experience for a custom cake and dessert studio. Built around a 'conversational commerce' model that bypasses cold checkout forms in favor of a direct Facebook Messenger integration — letting customers discuss bespoke cake designs with the baker directly. Features a custom OrderModalProvider, dynamic flavor showcase, animated storytelling with Framer Motion, and full SEO/Open Graph optimization.",
+    url: "https://bst-sweetbakes.vercel.app",
+    role: "Web Designer & Developer",
+    tags: ["Next.js 15", "TypeScript", "Tailwind CSS 4", "Framer Motion"],
+    status: "Live",
+  },
+  {
+    title: "OurDeliBread",
+    description:
+      "A modern digital storefront for a boutique Filipino bakery featuring a 3-phase ordering engine (Selection → Logistics → Fulfillment) with real-time subtotal calculations, category filtering, and complex state management. Omnichannel checkout routes structured order manifests via Facebook Messenger or Email, matching the bakery's existing workflow. Implements branch-specific fulfillment (pickup or delivery) and a premium 'Jadehaerys' design system with glassmorphism and amber-toned gradients.",
+    url: "https://our-deli-bread.vercel.app",
+    role: "Web Designer & Developer",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS 4", "Framer Motion"],
+    status: "Live",
+  },
 ];

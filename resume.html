@@ -16,8 +16,8 @@
 
     html, body {
       font-family: 'Manrope', system-ui, sans-serif;
-      font-size: 8.5pt;
-      line-height: 1.45;
+      font-size: 8pt;
+      line-height: 1.4;
       color: #1C1916;
       background: #fff;
       -webkit-print-color-adjust: exact;
@@ -40,7 +40,7 @@
       gap: 18px;
       background: #2A6B57;
       color: #fff;
-      padding: 20px 28px;
+      padding: 12px 28px;
       border-radius: 0;
     }
 
@@ -96,7 +96,7 @@
       width: 2.3in;
       flex-shrink: 0;
       background: #F0EBE2;
-      padding: 16px 16px;
+      padding: 11px 14px;
       border-right: 1px solid #DDD6CE;
       overflow: hidden;
     }
@@ -105,7 +105,7 @@
     .main {
       flex: 1;
       min-width: 0;
-      padding: 16px 20px;
+      padding: 11px 18px;
       background: #F8F5EF;
       overflow: hidden;
     }
@@ -122,10 +122,10 @@
       border-bottom: 1.5px solid #DDD6CE;
     }
 
-    .section { margin-bottom: 13px; }
+    .section { margin-bottom: 7px; }
 
     /* -- Skills -------------------------------- */
-    .skill-item { margin-bottom: 5px; }
+    .skill-item { margin-bottom: 3px; }
 
     .skill-name {
       font-size: 8pt;
@@ -150,23 +150,23 @@
     /* -- Values -------------------------------- */
     .value-item {
       font-size: 7.8pt;
-      padding: 3px 0 3px 8px;
+      padding: 2px 0 2px 8px;
       color: #1C1916;
       border-left: 2px solid #2A6B57;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     /* -- Profile text -------------------------- */
     .profile-text {
-      font-size: 8.5pt;
+      font-size: 8pt;
       color: #1C1916;
-      line-height: 1.5;
+      line-height: 1.4;
     }
 
     /* -- Projects ------------------------------ */
     .project {
-      margin-bottom: 9px;
-      padding-bottom: 8px;
+      margin-bottom: 5px;
+      padding-bottom: 4px;
       border-bottom: 1px solid #DDD6CE;
     }
 
@@ -212,7 +212,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 3px;
-      margin-top: 4px;
+      margin-top: 3px;
     }
 
     .tag {
@@ -304,14 +304,14 @@
       <img src="public/Resume.jpg" alt="Jade Mykel R. Ventic" class="header-photo" onerror="this.style.display='none'" />
       <div class="header-info">
         <div class="header-name">Jade Mykel R. Ventic</div>
-        <div class="header-title">Student Founder &amp; Developer &nbsp;&middot;&nbsp; Cebu, Philippines &nbsp;&middot;&nbsp; <span style="opacity:0.75;">Available for freelance &amp; collaborations</span></div>
+        <div class="header-title">Student Founder &amp; Developer &nbsp;&middot;&nbsp; Cebu, Philippines &nbsp;&middot;&nbsp; <span style="opacity:0.75;">Available for freelance &amp; Full Time Work</span></div>
         <div class="header-contacts">
           <span>&#128222; +63 991 569 6218</span>
           <a href="mailto:jmykelvenz@gmail.com">jmykelvenz@gmail.com</a>
           <a href="https://github.com/Jadehaerys">github.com/Jadehaerys</a>
           <a href="https://jmykelvenz-portfolio.vercel.app">jmykelvenz-portfolio.vercel.app</a>
         </div>
-        <div class="header-summary" style="margin-top:8px; font-size:8.5pt; color:#F8F5EF;">
+        <div class="header-summary" style="margin-top:5px; font-size:7.5pt; color:#F8F5EF;">
           <strong>Objective:</strong> Seeking internships, freelance, or collaborative opportunities to build impactful digital products. Eager to apply full-stack and product skills in real-world settings, with a focus on education technology and SaaS.
         </div>
       </div>
@@ -359,11 +359,11 @@
           </div>
           <div class="skill-item">
             <div class="skill-name">Programming Languages</div>
-            <div class="skill-detail">Java, C#, Python, JavaScript, TypeScript</div>
+            <div class="skill-detail">Java, C#, Python, JavaScript, TypeScript, PHP, HTML, CSS, Laravel</div>
           </div>
           <div class="skill-item">
             <div class="skill-name">Database &amp; Tools</div>
-            <div class="skill-detail">MySQL, SQLite, Git, Figma, Canva</div>
+            <div class="skill-detail">MySQL, SQLite, PostgreSQL, Git, Figma, Canva</div>
           </div>
           <div class="skill-item">
             <div class="skill-name">Languages</div>
@@ -396,10 +396,18 @@
         </div>
 
         <div class="section">
-          <div class="section-title">Certifications</div>
+          <div class="section-title">Certifications &amp; Awards</div>
           <div class="edu-item" style="margin-bottom:5px;">
             <span>Cisco Cybersecurity</span>
             <div style="font-size:7.5pt; color:#7A726A;">Introduction to Cybersecurity &mdash; Cisco</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:5px;">
+            <span style="color:#C05A2A;">4th Place &mdash; 12th UC Hackathon</span>
+            <div style="font-size:7.5pt; color:#7A726A;">ICT Congress &mdash; University of Cebu</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:0;">
+            <span style="color:#C05A2A;">3rd Place &mdash; Hackathon Challenge</span>
+            <div style="font-size:7.5pt; color:#7A726A;">CCS Innovation Days &mdash; UCLM</div>
           </div>
         </div>
 
@@ -467,44 +475,12 @@
 
           <div class="project">
             <div class="project-header">
-              <span class="project-title">HR System Dashboard</span>
-              <span class="project-role">Course Project</span>
-            </div>
-            <div class="project-desc">
-              Full-featured dashboard interface with user filters and profile cards. Implements complete CRUD operations connected to a MySQL database with a modern interactive UI layout.<br>
-              <span style="color:#2A6B57; font-size:7.5pt;">• Managed 200+ employee records<br>• Received top score in class project evaluation</span>
-            </div>
-            <div class="project-tags">
-              <span class="tag">C# WinForms</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">CRUD</span>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="project-header">
-              <span class="project-title">Help the Lady Cross the Road</span>
-              <span class="project-role">Java GUI Project</span>
-            </div>
-            <div class="project-desc">
-              Interactive Java GUI game built with JFrame, JPanel, CardLayout, and JSwing. Features logic separation, image rendering, and custom button alignment.<br>
-              <span style="color:#2A6B57; font-size:7.5pt;">• 100+ downloads by classmates<br>• Praised for clean code structure</span>
-            </div>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag">JSwing</span>
-              <span class="tag">JFrame</span>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="project-header">
               <span class="project-title">S&amp;R Pastry Shop</span>
               <span class="project-role">Web Designer &amp; Developer</span>
               <a class="project-url" href="https://s-and-r-pastry-shop.vercel.app">s-and-r-pastry-shop.vercel.app</a>
             </div>
             <div class="project-desc">
-              High-performance e-commerce web app for a Cebu-based bakery. Custom checkout flow formats order details to the clipboard before redirecting to Facebook Messenger &mdash; bridging a polished web store with the shop&rsquo;s GCash/Messenger workflow. Features real-time store status (PST), persistent cart via LocalStorage, Framer Motion animations, Quick View modals, and category filtering.<br>
+              High-performance e-commerce web app for a Cebu-based bakery. Custom checkout flow formats order details to the clipboard before redirecting to Facebook Messenger &mdash; bridging a polished web store with the shop&rsquo;s GCash/Messenger workflow. Features real-time store status (PST)<br>
               <span style="color:#2A6B57; font-size:7.5pt;">• Solved Messenger deep-link limitation with a clipboard-based order handoff<br>• Zero-backend architecture fitted to a small business&rsquo;s existing workflow</span>
             </div>
             <div class="project-tags">
@@ -529,6 +505,42 @@
             <div class="project-tags">
               <span class="tag">React</span>
               <span class="tag">Tailwind CSS</span>
+              <span class="tag">Framer Motion</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">BST Sweetbakes</span>
+              <span class="project-role">Web Designer &amp; Developer</span>
+              <a class="project-url" href="https://bst-sweetbakes.vercel.app">bst-sweetbakes.vercel.app</a>
+            </div>
+            <div class="project-desc">
+              Premium digital experience for a custom cake studio built on a &ldquo;conversational commerce&rdquo; model. A custom OrderModalProvider funnels high-intent actions into a direct Facebook Messenger integration, bypassing complex checkout forms. Features dynamic flavor showcase, animated storytelling, and full SEO/OG optimization.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">• Retained boutique personal-touch while modernizing the ordering flow<br>• Cream &amp; Rose design system with Cormorant Garamond &amp; DM Sans</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Next.js 15</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind CSS 4</span>
+              <span class="tag">Framer Motion</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">OurDeliBread</span>
+              <span class="project-role">Web Designer &amp; Developer</span>
+              <a class="project-url" href="https://our-deli-bread.vercel.app">our-deli-bread.vercel.app</a>
+            </div>
+            <div class="project-desc">
+              Modern digital storefront for a boutique Filipino bakery. Features a 3-phase ordering engine (Selection &rarr; Logistics &rarr; Fulfillment) with real-time subtotal calculations, category filtering, and complex state management. Omnichannel checkout routes structured order manifests via Messenger or Email &mdash; branch-specific pickup or delivery.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">• Glassmorphism &ldquo;Jadehaerys&rdquo; design system with amber-toned gradients<br></span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind CSS 4</span>
               <span class="tag">Framer Motion</span>
             </div>
           </div>
