@@ -267,4 +267,31 @@ export const OTHER_PROJECTS = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS 4", "Framer Motion"],
     status: "Live",
   },
+  {
+    title: "Maribago Grill",
+    description:
+      "Restaurant website for a seafood & grill oasis established in 2003 on Mactan Island, Cebu. Built around the venue's sea-and-open-flame identity with a full menu showcase, reservations flow, private dining section, and brand story. The design captures the laid-back, eclectic atmosphere of a destination where locals and foreign tourists converge.",
+    url: "https://maribago-grill.vercel.app",
+    role: "Web Designer & Developer",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    status: "Live",
+  },
+  {
+    title: "J'J Flower Shop",
+    description:
+      "Website for a premium flower shop in Cordova, Cebu, anchored in a 'Nature's Elegance' brand identity. Features a product catalog, seasonal offers, testimonials, and a direct ordering flow. Designed to showcase the organic beauty of floral arrangements while driving online discoverability for a local shop.",
+    url: "https://jj-flower.vercel.app",
+    role: "Web Designer & Developer",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    status: "Live",
+  },
+  {
+    title: "Armonia",
+    description:
+      "Company website for Armonia Information Technology Services — a DTI-registered IT services firm based in Liloan, Cebu. Showcases the company's services, project portfolio, compliance credentials, and contact information. Built to communicate professionalism and reliability for a technology-driven business serving local and national clients.",
+    url: "https://armonia-wp.vercel.app",
+    role: "Founder & Developer",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    status: "Live",
+  },
 ];
