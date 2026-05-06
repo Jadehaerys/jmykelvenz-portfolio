@@ -100,3 +100,152 @@
 15. **Security:**
     - **Question:** What is XSS (Cross-Site Scripting) and how can you prevent it?
     - **Answer:** XSS is an attack where malicious scripts are injected into web pages. Prevent it by escaping user input, using secure frameworks, and validating/sanitizing data.
+
+# Webhouse Intro Call Prep
+
+## 1. Self-Introduction (1–2 minutes)
+Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. I have hands-on experience building and deploying web applications for real clients, including e-commerce, SaaS, and collaborative platforms. My main stack is React, Next.js, TypeScript, and Vercel for the frontend, and I also work with Supabase, MySQL, PostgreSQL, and API integrations for the backend. I enjoy working on projects that solve real problems and improve user experience. I’m passionate about building products end-to-end, from design to deployment, and I’m always eager to learn new tools and approaches. 
+
+## 2. STAR Stories (Project Highlights)
+
+### Tuon (AI-Powered Study Platform)
+- **Situation:** Students needed a better way to turn learning materials into active practice.
+- **Task:** Build a platform that generates flashcards and quizzes from any topic, PDF, or YouTube link.
+- **Action:** Designed and developed the full-stack app solo using React, TypeScript, Supabase, Groq API, and Vercel. Integrated AI features, subscription billing, and privacy-first architecture.
+- **Result:** Over 1,000 users in the first 3 months, 99.9% uptime, and positive feedback on usability.
+
+### S&R Pastry Shop (E-Commerce Web App)
+- **Situation:** Local bakery needed a digital storefront that fit their Messenger/GCash workflow.
+- **Task:** Create a web app with a custom checkout flow that bridges web and Messenger.
+- **Action:** Built a high-performance site with Next.js, TypeScript, Tailwind CSS, and Framer Motion. Developed a clipboard-based order handoff to Messenger.
+- **Result:** Enabled online orders without backend complexity, modernized the business, and improved customer experience.
+
+### PSITS Voting System (Collaborative Project)
+- **Situation:** Student org needed a secure, efficient way to run elections.
+- **Task:** Build an online voting platform for officer elections.
+- **Action:** Co-developed the app using React and Vercel, focusing on security and usability.
+- **Result:** Processed 500+ votes, reduced tallying time by 90%, and received positive feedback from users.
+
+## 3. Questions to Ask Webhouse
+- What does a typical project look like at Webhouse?
+- What tech stack do you use most often?
+- How is the team structured, and how do developers collaborate?
+- What does success look like for someone in this role?
+- What are the next steps after this call?
+
+## 4. Logistics Checklist
+- Test internet, camera, and mic before the call
+- Have resume and portfolio open for reference
+- Dress neatly and be ready 5 minutes early
+
+## 5. Extra Interview Preparation
+
+### Behavioral & Soft Skills
+- Prepare examples of teamwork, leadership, and problem-solving (e.g., leading a student org, collaborating on group projects, handling client feedback).
+- Be ready to discuss how you handle deadlines, prioritize tasks, and learn new technologies quickly.
+- Practice answers to: "Tell me about a challenge you faced and how you overcame it," and "How do you handle feedback or mistakes?"
+
+### Technical Deep-Dive
+- Review your own code and be ready to explain your design decisions (e.g., why you chose a certain stack, how you handled authentication, or optimized performance).
+- Be prepared to whiteboard or talk through a simple algorithm or API design if asked.
+- Brush up on REST API design, database schema basics, and common security practices (e.g., XSS, SQL injection prevention).
+- Know how to explain the difference between frontend and backend responsibilities in your projects.
+
+### Portfolio Walkthrough
+- Have 2–3 projects ready to demo or discuss in detail (what problem they solved, your role, tech used, and results).
+- Be ready to share links or screenshare if asked.
+
+### Post-Call Follow-Up
+- After the call, send a short thank-you email summarizing your interest and mentioning something specific you enjoyed about the conversation.
+- Example: "Thank you for the insightful conversation about Webhouse's approach to product development. I'm excited about the possibility of contributing to your team."
+
+## 6. Explaining Behavioral & Technical Prompts
+
+### Teamwork Example
+"In my PSITS Voting System project, I collaborated with other developers to build a secure online voting platform. We divided tasks based on our strengths, communicated regularly, and used Git for version control. When conflicts arose, I helped mediate and kept the team focused on our shared goal."
+
+### Leadership Example
+"As a student leader, I organized events and managed a team. I delegated tasks, set clear expectations, and motivated members by recognizing their contributions. This taught me how to balance project goals with individual strengths."
+
+### Problem-Solving Example
+"While building Tuon, I faced challenges integrating the Groq API for AI features. I broke the problem into smaller parts, researched solutions, and tested iteratively until it worked. This experience improved my debugging and persistence."
+
+### Handling Feedback/Mistakes
+"I see feedback as a chance to improve. For example, after a client suggested changes to a website’s checkout flow, I listened, clarified their needs, and quickly iterated on the design. If I make a mistake, I own it, fix it, and document the lesson for next time."
+
+### Explaining Technical Decisions
+"I chose React and Next.js for most projects because they offer fast development, great performance, and strong community support. For backend, I use Supabase or Node.js for rapid prototyping and easy integration. I always consider scalability, maintainability, and the client’s needs when picking tools."
+
+## 7. How to Design Systems Well (Practical Tips)
+- **Start with the user:** Understand the real problem and user needs before writing code. Sketch user flows and map out the main features.
+- **Break down requirements:** List all features, then group them into MVP (must-have) and nice-to-have. Prioritize what delivers the most value first.
+- **Choose the right stack:** Pick technologies you know will scale and are maintainable. Don’t over-engineer; use proven tools unless there’s a clear reason to try something new.
+- **Design for modularity:** Structure code into reusable components (frontend) and clear API endpoints (backend). Use folders and naming conventions that make sense.
+- **Plan for data:** Design your database schema early. Think about how data will flow between frontend, backend, and database. Use diagrams if needed.
+- **Security and validation:** Always validate user input, handle errors gracefully, and protect sensitive data (e.g., passwords, API keys).
+- **Test early and often:** Write tests for critical logic. Manually test user flows. Fix bugs as soon as you find them.
+- **Document as you go:** Write clear comments, README files, and API docs. This helps you and others maintain the system later.
+- **Iterate and get feedback:** Ship early, gather user/client feedback, and improve the system in cycles.
+
+## 8. How to Scale Systems (Practical Strategies)
+- **Design for statelessness:** Make backend services stateless where possible, so you can add more servers easily (horizontal scaling).
+- **Use managed services:** Leverage cloud platforms (like Vercel, Supabase, AWS, etc.) that handle scaling, load balancing, and failover for you.
+- **Database scaling:** Start with a normalized schema, use indexes for fast queries, and consider read replicas or sharding as you grow. Use caching (e.g., Redis) to reduce database load.
+- **API rate limiting:** Protect your system from overload by limiting how many requests a user or client can make per minute.
+- **Asynchronous processing:** Offload heavy or slow tasks (like sending emails, processing images) to background jobs or queues (e.g., using tools like Bull, Celery, or cloud functions).
+- **CDN for static assets:** Serve images, CSS, and JS from a Content Delivery Network to reduce latency and server load.
+- **Monitor and alert:** Set up monitoring (e.g., with Sentry, Datadog, or built-in cloud tools) to catch errors and performance issues early.
+- **Automated testing and CI/CD:** Use automated tests and continuous deployment pipelines to safely ship updates as your system grows.
+- **Optimize code and queries:** Profile your app to find bottlenecks, and refactor slow code or database queries.
+- **Plan for growth:** Regularly review your architecture and be ready to refactor or upgrade components as usage increases.
+
+### Example (Scaling Tuon)
+- Started on Vercel for easy auto-scaling and global CDN.
+- Used Supabase for managed database and authentication.
+- Added caching for frequently accessed data.
+- Monitored usage and upgraded resources as user base grew.
+
+#### How to Approach the Technical Deep-Dive
+- **Explaining design decisions:**
+  - Example: “I chose React and Next.js for the frontend because they allow for fast development, server-side rendering, and good SEO. For authentication, I used Supabase Auth for secure, managed user sessions. To optimize performance, I used code splitting, lazy loading, and a CDN for static assets.”
+  - Be specific about trade-offs: “I picked Supabase over Firebase because of its SQL support and open-source nature.”
+- **Whiteboarding/talking through algorithms:**
+  - Practice explaining a simple algorithm (e.g., how to reverse a string, or how your API paginates results).
+    - **Reverse a string (JS):**
+      - "To reverse a string in JavaScript, I split it into an array, reverse the array, and join it back: `str.split('').reverse().join('')`. This is efficient for most use cases."
+    - **Find the max in an array:**
+      - "I loop through the array, compare each value to a variable holding the current max, and update it if I find a larger value. In JS: `Math.max(...arr)`."
+    - **Check for palindrome:**
+      - "Compare the string to its reverse. If they're equal, it's a palindrome."
+    - **FizzBuzz:**
+      - "Loop from 1 to n, print 'Fizz' for multiples of 3, 'Buzz' for 5, 'FizzBuzz' for both, else the number."
+    - **API pagination logic:**
+      - "Given a page and pageSize, I calculate the start index as `(page-1)*pageSize` and return `array.slice(start, start+pageSize)`. For databases, I use SQL's `LIMIT` and `OFFSET`."
+    - **Sum all even numbers in an array:**
+      - "Filter the array for even numbers, then use `reduce` to sum them."
+    - **Remove duplicates from an array:**
+      - "Use a Set in JS: `[...new Set(arr)]`."
+    - **Count character frequency in a string:**
+      - "Loop through each character, use an object to store counts, increment as you go."
+  - For API design: “Here’s how I’d design a REST endpoint for /api/products: GET for listing, POST for creating, PUT/PATCH for updating, DELETE for removal. I’d validate input, handle errors, and return clear status codes."
+    - **Example answer:**
+      - "For a GET /api/products endpoint, I’d fetch products from the database, support pagination with query params like `?page=1&pageSize=10`, and return a JSON array. For POST, I’d validate the request body, insert the product, and return the new product with a 201 status. For PUT/PATCH, I’d check if the product exists, update fields, and return the updated product. For DELETE, I’d remove the product and return a 204 status. I always handle errors with clear messages and proper status codes."
+- **REST API, database, and security:**
+  - REST: “I follow REST principles—clear endpoints, stateless requests, and proper HTTP verbs.”
+  - Database: “I design schemas to avoid duplication, use indexes for performance, and plan for migrations.”
+  - Security: “I sanitize user input, use parameterized queries to prevent SQL injection, and escape output to prevent XSS.”
+- **Frontend vs Backend responsibilities:**
+  - “Frontend handles UI, user input, and API calls. Backend handles business logic, data storage, authentication, and security. For example, the frontend collects form data and sends it to the backend, which validates and stores it.”
+
+#### How to Nail the Portfolio Walkthrough
+- **Project storytelling:**
+  - “For my Tuon project, the problem was students needed a better way to study. I built an AI-powered platform that generates quizzes from any material. I handled the full stack: React/Next.js frontend, Supabase backend, Groq API for AI, and Vercel for deployment. The result: 1,000+ users in 3 months and great feedback.”
+  - “For S&R Pastry Shop, the challenge was to fit a web store into a Messenger/GCash workflow. I designed a custom checkout that copies order details to the clipboard and deep-links to Messenger, making it seamless for the business.”
+- **What to highlight:**
+  - The problem, your solution, your role, the tech stack, and the impact/results.
+  - Be ready to show code snippets, explain architecture, or screenshare the live site.
+- **Sharing links/screens:**
+  - Have your portfolio, GitHub, and live project links open and ready to share.
+  - If asked to screenshare, walk through the user flow and point out interesting technical details or challenges you solved.
+
+---
