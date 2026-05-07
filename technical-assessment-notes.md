@@ -101,10 +101,19 @@
     - **Question:** What is XSS (Cross-Site Scripting) and how can you prevent it?
     - **Answer:** XSS is an attack where malicious scripts are injected into web pages. Prevent it by escaping user input, using secure frameworks, and validating/sanitizing data.
 
+XSS (Cross-Site Scripting):
+XSS is a security vulnerability where an attacker injects malicious scripts into web pages viewed by other users. This can allow attackers to steal cookies, session tokens, or other sensitive information. Prevent XSS by escaping user input and using secure frameworks.
+
+SQL Injection:
+SQL injection is a vulnerability where an attacker manipulates SQL queries by injecting malicious input into form fields or URLs. This can allow unauthorized access, data leaks, or data loss. Prevent SQL injection by using parameterized queries and validating user input.
+
+CORS (Cross-Origin Resource Sharing):
+CORS is a browser security feature that controls how web pages can request resources from a different domain. It helps prevent malicious websites from making unauthorized requests to your server. You configure CORS on your backend to specify which domains are allowed to access your API.
+
 # Webhouse Intro Call Prep
 
 ## 1. Self-Introduction (1–2 minutes)
-Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. I have hands-on experience building and deploying web applications for real clients, including e-commerce, SaaS, and collaborative platforms. My main stack is React, Next.js, TypeScript, and Vercel for the frontend, and I also work with Supabase, MySQL, PostgreSQL, and API integrations for the backend. I enjoy working on projects that solve real problems and improve user experience. I’m passionate about building products end-to-end, from design to deployment, and I’m always eager to learn new tools and approaches. 
+Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. I have hands-on experience building and deploying web applications for real clients, including e-commerce, SaaS, and collaborative platforms. My main stack is React, Next.js, TypeScript, and Vercel for the frontend, and I also work with Supabase, MySQL, PostgreSQL, and API integrations for the backend. I enjoy working on projects that solve real problems and improve user experience. I’m passionate about building products end-to-end, from design to deployment, and I’m always eager to learn new tools and approaches.
 
 ## 2. STAR Stories (Project Highlights)
 
@@ -128,9 +137,13 @@ Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. 
 
 ## 3. Questions to Ask Webhouse
 - What does a typical project look like at Webhouse?
+
 - What tech stack do you use most often?
+
 - How is the team structured, and how do developers collaborate?
+
 - What does success look like for someone in this role?
+
 - What are the next steps after this call?
 
 ## 4. Logistics Checklist
@@ -146,10 +159,29 @@ Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. 
 - Practice answers to: "Tell me about a challenge you faced and how you overcame it," and "How do you handle feedback or mistakes?"
 
 ### Technical Deep-Dive
-- Review your own code and be ready to explain your design decisions (e.g., why you chose a certain stack, how you handled authentication, or optimized performance).
-- Be prepared to whiteboard or talk through a simple algorithm or API design if asked.
-- Brush up on REST API design, database schema basics, and common security practices (e.g., XSS, SQL injection prevention).
-- Know how to explain the difference between frontend and backend responsibilities in your projects.
+Review your own code and be ready to explain your design decisions:
+“I choose technologies based on project requirements, scalability, and maintainability. For example, I use React and Next.js for fast development and good SEO, and Supabase for managed authentication and database.”
+
+How you handled authentication:
+“I use Supabase Auth for secure managed user authentication. I implement protected routes on the frontend and verify tokens on the backend to ensure only authorized users can access sensitive data.”
+
+How you optimized performance:
+“I optimize performance by using code splitting, lazy loading, image optimization, and serving static assets via a CDN. I also monitor app performance and fix bottlenecks as they appear.”
+
+Whiteboard or talk through a simple algorithm:
+“To reverse a string in JavaScript: str.split('').reverse().join(''). For API pagination, I calculate the start index as (page-1)*pageSize and return array.slice(start, start+pageSize).”
+
+REST API design:
+“I design REST APIs with clear endpoints, use proper HTTP verbs (GET, POST, PUT, DELETE), and return appropriate status codes. I validate input, handle errors gracefully, and document the API for consumers.”
+
+Database schema basics:
+“I design normalized schemas to avoid data duplication, use primary and foreign keys for relationships, and add indexes to speed up queries. I plan for migrations to handle schema changes safely.”
+
+Common security practices (e.g., XSS, SQL injection prevention):
+“I sanitize and validate all user input, use parameterized queries to prevent SQL injection, and escape output to prevent XSS. I also use HTTPS and secure authentication methods.”
+
+Difference between frontend and backend responsibilities:
+“Frontend handles the user interface, user input, and API calls. Backend handles business logic, data storage, authentication, and security. The frontend sends requests, and the backend processes them and returns data.”
 
 ### Portfolio Walkthrough
 - Have 2–3 projects ready to demo or discuss in detail (what problem they solved, your role, tech used, and results).
@@ -162,7 +194,7 @@ Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. 
 ## 6. Explaining Behavioral & Technical Prompts
 
 ### Teamwork Example
-"In my PSITS Voting System project, I collaborated with other developers to build a secure online voting platform. We divided tasks based on our strengths, communicated regularly, and used Git for version control. When conflicts arose, I helped mediate and kept the team focused on our shared goal."
+"In my PSITS Voting System project, I worked closely with other developers. We divided tasks based on our strengths, communicated regularly, and used Git for version control. When conflicts arose, I helped mediate and kept the team focused on our shared goal."
 
 ### Leadership Example
 "As a student leader, I organized events and managed a team. I delegated tasks, set clear expectations, and motivated members by recognizing their contributions. This taught me how to balance project goals with individual strengths."
@@ -170,11 +202,26 @@ Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. 
 ### Problem-Solving Example
 "While building Tuon, I faced challenges integrating the Groq API for AI features. I broke the problem into smaller parts, researched solutions, and tested iteratively until it worked. This experience improved my debugging and persistence."
 
-### Handling Feedback/Mistakes
+### Handling Deadlines & Prioritization
+"I use a combination of digital tools and to-do lists to track deadlines and priorities. I break down large tasks into smaller steps, estimate time needed, and adjust my plan as needed. If a deadline is tight, I focus on the most critical features first and communicate early if there are risks."
+
+### Learning New Technologies
+"I enjoy learning new tools and frameworks. For example, when I needed to use Supabase for authentication, I read the docs, built a small prototype, and integrated it into my project. I’m comfortable picking up new tech quickly by combining documentation, tutorials, and hands-on practice."
+
+### Challenge/Overcoming Obstacles
+"During a freelance project, I encountered a bug that caused the checkout flow to fail on mobile. I reproduced the issue, used browser dev tools to debug, and found a CSS conflict. After fixing it, I added a test to prevent regressions."
+
+### Handling Feedback or Mistakes
 "I see feedback as a chance to improve. For example, after a client suggested changes to a website’s checkout flow, I listened, clarified their needs, and quickly iterated on the design. If I make a mistake, I own it, fix it, and document the lesson for next time."
 
-### Explaining Technical Decisions
-"I chose React and Next.js for most projects because they offer fast development, great performance, and strong community support. For backend, I use Supabase or Node.js for rapid prototyping and easy integration. I always consider scalability, maintainability, and the client’s needs when picking tools."
+### Explaining Design Decisions
+"I chose React and Next.js for most projects because they offer fast development, great performance, and strong community support. For authentication, I used Supabase Auth for secure, managed user sessions. To optimize performance, I used code splitting, lazy loading, and a CDN for static assets."
+
+### REST API, Database, and Security
+"I follow REST principles—clear endpoints, stateless requests, and proper HTTP verbs. For databases, I design schemas to avoid duplication, use indexes for performance, and plan for migrations. For security, I sanitize user input, use parameterized queries to prevent SQL injection, and escape output to prevent XSS."
+
+### Frontend vs Backend Responsibilities
+"Frontend handles UI, user input, and API calls. Backend handles business logic, data storage, authentication, and security. For example, the frontend collects form data and sends it to the backend, which validates and stores it."
 
 ## 7. How to Design Systems Well (Practical Tips)
 - **Start with the user:** Understand the real problem and user needs before writing code. Sketch user flows and map out the main features.
@@ -248,4 +295,34 @@ Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. 
   - Have your portfolio, GitHub, and live project links open and ready to share.
   - If asked to screenshare, walk through the user flow and point out interesting technical details or challenges you solved.
 
----
+### Sample Answers for Interview Prompts
+
+#### Teamwork Example
+"In my PSITS Voting System project, I worked closely with other developers. We divided tasks based on our strengths, communicated regularly, and used Git for version control. When conflicts arose, I helped mediate and kept the team focused on our shared goal."
+
+#### Leadership Example
+"As a student leader, I organized events and managed a team. I delegated tasks, set clear expectations, and motivated members by recognizing their contributions. This taught me how to balance project goals with individual strengths."
+
+#### Problem-Solving Example
+"While building Tuon, I faced challenges integrating the Groq API for AI features. I broke the problem into smaller parts, researched solutions, and tested iteratively until it worked. This experience improved my debugging and persistence."
+
+#### Handling Deadlines & Prioritization
+"I use a combination of digital tools and to-do lists to track deadlines and priorities. I break down large tasks into smaller steps, estimate time needed, and adjust my plan as needed. If a deadline is tight, I focus on the most critical features first and communicate early if there are risks."
+
+#### Learning New Technologies
+"I enjoy learning new tools and frameworks. For example, when I needed to use Supabase for authentication, I read the docs, built a small prototype, and integrated it into my project. I’m comfortable picking up new tech quickly by combining documentation, tutorials, and hands-on practice."
+
+#### Challenge/Overcoming Obstacles
+"During a freelance project, I encountered a bug that caused the checkout flow to fail on mobile. I reproduced the issue, used browser dev tools to debug, and found a CSS conflict. After fixing it, I added a test to prevent regressions."
+
+#### Handling Feedback or Mistakes
+"I see feedback as a chance to improve. For example, after a client suggested changes to a website’s checkout flow, I listened, clarified their needs, and quickly iterated on the design. If I make a mistake, I own it, fix it, and document the lesson for next time."
+
+#### Explaining Design Decisions
+"I chose React and Next.js for most projects because they offer fast development, great performance, and strong community support. For authentication, I used Supabase Auth for secure, managed user sessions. To optimize performance, I used code splitting, lazy loading, and a CDN for static assets."
+
+#### REST API, Database, and Security
+"I follow REST principles—clear endpoints, stateless requests, and proper HTTP verbs. For databases, I design schemas to avoid duplication, use indexes for performance, and plan for migrations. For security, I sanitize user input, use parameterized queries to prevent SQL injection, and escape output to prevent XSS."
+
+#### Frontend vs Backend Responsibilities
+"Frontend handles UI, user input, and API calls. Backend handles business logic, data storage, authentication, and security. For example, the frontend collects form data and sends it to the backend, which validates and stores it."
