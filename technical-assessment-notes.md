@@ -326,3 +326,12 @@ Difference between frontend and backend responsibilities:
 
 #### Frontend vs Backend Responsibilities
 "Frontend handles UI, user input, and API calls. Backend handles business logic, data storage, authentication, and security. For example, the frontend collects form data and sends it to the backend, which validates and stores it."
+
+
+Hi! I’m Jade Mykel Ventic, a student founder and full-stack web developer based in Cebu. I’m passionate about building digital products that are actually used—especially in education and SaaS.
+
+On the front-end, I specialize in React and Next.js with TypeScript and Tailwind CSS, focusing on modern, responsive, and accessible interfaces. I love bringing designs to life and making sure users have a smooth experience.
+
+For the back-end, I’ve worked with Supabase, PHP (Laravel), and Python, handling authentication, payments, and database management. I’ve built and launched several real-world projects end-to-end, including an AI-powered study platform and e-commerce sites for local businesses.
+
+I’m a Dean’s Lister and student leader, but I take the most pride in shipping products that solve real problems. I’m excited about the opportunity to bring my skills and passion to your team. Thank you!
