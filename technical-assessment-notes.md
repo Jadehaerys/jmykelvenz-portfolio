@@ -116,7 +116,7 @@ CORS is a browser security feature that controls how web pages can request resou
 Hi, I’m Jade Mykel Ventic, a web developer and student founder based in Cebu. I have hands-on experience building and deploying web applications for real clients, including e-commerce, SaaS, and collaborative platforms. My main stack is React, Next.js, TypeScript, and Vercel for the frontend, and I also work with Supabase, MySQL, PostgreSQL, and API integrations for the backend. I enjoy working on projects that solve real problems and improve user experience. I’m passionate about building products end-to-end, from design to deployment, and I’m always eager to learn new tools and approaches.
 
 ## 2. STAR Stories (Project Highlights)
-
+adaw
 ### Tuon (AI-Powered Study Platform)
 - **Situation:** Students needed a better way to turn learning materials into active practice.
 - **Task:** Build a platform that generates flashcards and quizzes from any topic, PDF, or YouTube link.
