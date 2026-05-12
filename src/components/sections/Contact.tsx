@@ -6,9 +6,10 @@ import { SITE } from "../../data/config";
 
 export function Contact() {
   const socials = [
-    { name: "GitHub",    href: SITE.contact.github,    icon: "github"   as const, label: "github"   },
-    { name: "LinkedIn",  href: SITE.contact.linkedin,  icon: "linkedin" as const, label: "linkedin" },
-    { name: "Facebook",  href: SITE.contact.facebook,  icon: "facebook" as const, label: "facebook" },
+    { name: "GitHub",    href: SITE.contact.github,       icon: "github"   as const, label: "github"   },
+    { name: "LinkedIn",  href: SITE.contact.linkedin,     icon: "linkedin" as const, label: "linkedin" },
+    { name: "Facebook",  href: SITE.contact.facebook,     icon: "facebook" as const, label: "facebook" },
+    { name: "Armonia",   href: SITE.contact.businessSite, icon: "globe"    as const, label: "armoniait.com" },
   ];
 
   return (
@@ -64,7 +65,7 @@ export function Contact() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`${name} — ${label} placeholder, update in config.ts`}
+                  aria-label={`${name} — ${label}`}
                   className="group flex items-center gap-2 px-4 py-2.5 rounded-full border border-border bg-surface hover:bg-surface-card hover:border-border/80 transition-all duration-200 text-muted hover:text-text"
                 >
                   <Icon name={icon} size={16} />

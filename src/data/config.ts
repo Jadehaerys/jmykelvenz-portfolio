@@ -20,10 +20,11 @@ export const SITE = {
   // ── Contact & Socials ─────────────────────
   // Replace placeholder hrefs with your real URLs before deploying.
   contact: {
-    email:    "support@tuon.net",
-    github:   "https://github.com/Jadehaerys",
-    linkedin: "https://linkedin.com/in/jade-mykel-r-ventic-71bb582a2",
-    facebook: "https://www.facebook.com/jade.mykel",
+    email:        "support@tuon.net",
+    github:       "https://github.com/Jadehaerys",
+    linkedin:     "https://linkedin.com/in/jade-mykel-r-ventic-71bb582a2",
+    facebook:     "https://www.facebook.com/jade.mykel",
+    businessSite: "https://armoniait.com",
   },
 
   // ── SEO / OG defaults ─────────────────────
@@ -289,7 +290,7 @@ export const OTHER_PROJECTS = [
     title: "Armonia",
     description:
       "Company website for Armonia Information Technology Services — a DTI-registered IT services firm based in Liloan, Cebu. Showcases the company's services, project portfolio, compliance credentials, and contact information. Built to communicate professionalism and reliability for a technology-driven business serving local and national clients.",
-    url: "https://armonia-wp.vercel.app",
+    url: "https://armoniait.com",
     role: "Founder & Developer",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     status: "Live",
