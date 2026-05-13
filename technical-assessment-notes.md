@@ -335,3 +335,69 @@ On the front-end, I specialize in React and Next.js with TypeScript and Tailwind
 For the back-end, I’ve worked with Supabase, PHP (Laravel), and Python, handling authentication, payments, and database management. I’ve built and launched several real-world projects end-to-end, including an AI-powered study platform and e-commerce sites for local businesses.
 
 I’m a Dean’s Lister and student leader, but I take the most pride in shipping products that solve real problems. I’m excited about the opportunity to bring my skills and passion to your team. Thank you!
+
+---
+
+## Digital Benefits Interview Prep (May 2026)
+
+### About Me Pitch
+Hi, I’m Jade Mykel Ventic, a student founder and developer based in Cebu. I’m passionate about building digital products that are actually used—especially in education technology. I founded Armonia IT Services, where I lead product development and business operations for Tuon, an AI-powered study platform. I have hands-on experience in full-stack development, from frontend (React, TypeScript, Vite) to backend, payments, and deployment. I’m also a Dean’s Lister and student leader, but I take more pride in shipping real products and solving real problems for users.
+
+---
+
+### 1. Background and Experience
+**Q: Tell us about your background and experience.**
+
+A:
+I’m currently a BSIT student at the University of Cebu, where I’ve been a Dean’s Lister and active student leader. I founded Armonia IT Services, a BIR-registered SaaS and web development business, and built Tuon, an AI-powered study platform with over 1,000 users in its first three months. I’ve also worked as a freelance web developer, delivering modern, responsive websites for local businesses and organizations. My focus is always on building products that are useful, user-friendly, and reliable.
+
+**Q: What are some of your most significant projects?**
+
+A:
+- **Tuon (Founder & Developer):** AI-powered study platform that generates flashcards and quizzes from any material, with features like AI tutor chat, subscription billing, and privacy-first architecture. Achieved 1,000+ users in 3 months and 99.9% uptime on Vercel.
+- **PSITS Voting System (Co-developer):** Online voting platform for student elections, processed 500+ votes securely and reduced manual tallying time by 90%.
+- **Freelance Projects:** Built and deployed websites for bakeries, repair shops, and local businesses, focusing on modern design, performance, and client satisfaction.
+
+**Q: What motivates you as a developer?**
+
+A:
+I’m motivated by building things that are actually useful and seeing people benefit from my work. I enjoy solving real-world problems, learning new technologies, and continuously improving my skills. I value ownership, clear communication, and designing for the end user.
+
+---
+
+### 2. Technical and Workflow Understanding
+**Q: Can you describe your technical skills and workflow?**
+
+A:
+My main stack is React, TypeScript, Vite, and Tailwind CSS for frontend, with experience in backend integration, authentication (Supabase), and payment systems (PayMongo). I use Git for version control and Vercel for deployment. My workflow starts with understanding user needs, then designing UX flows, building features iteratively, and testing thoroughly before deployment. I’m comfortable working solo or collaborating, and I prioritize clear code, documentation, and continuous improvement.
+
+**Q: How do you approach debugging and problem-solving?**
+
+A:
+I use browser dev tools, React DevTools, and console logging to isolate issues. I check for state management problems, API errors, and UI bugs. I also write small test cases or use online sandboxes to reproduce tricky bugs. If I get stuck, I research solutions, ask for feedback, or break the problem into smaller parts.
+
+**Q: How do you manage your projects and ensure quality?**
+
+A:
+I use Git for version control, keep my commits focused, and write clear commit messages. I document key decisions and maintain a changelog for major projects. For quality, I test features manually, use TypeScript for type safety, and review my code for readability and maintainability. I also gather user feedback and iterate quickly.
+
+---
+
+### 3. Role Expectations and Availability
+**Q: What are your expectations for this role, and what is your availability?**
+
+A:
+I’m looking for a role where I can contribute to building impactful products, learn from experienced teammates, and grow my skills further. I’m available for both freelance and full-time work, and can start immediately. I’m based in Cebu (GMT+8) and comfortable working remotely and asynchronously.
+
+**Q: What is your preferred work style?**
+
+A:
+I’m comfortable working independently or as part of a team. I value clear communication, async updates, and regular check-ins. I like to break down tasks, set priorities, and deliver in small, frequent iterations. I’m proactive about asking questions and giving feedback.
+
+---
+
+### 4. Questions to Ask Them
+- What does a typical project or sprint look like for your team?
+- What technologies and tools do you use most often?
+- How does the team support learning and growth?
+- What are the biggest challenges the team is facing right now?
