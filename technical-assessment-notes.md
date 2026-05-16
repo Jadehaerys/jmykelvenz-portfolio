@@ -401,3 +401,22 @@ I’m comfortable working independently or as part of a team. I value clear comm
 - What technologies and tools do you use most often?
 - How does the team support learning and growth?
 - What are the biggest challenges the team is facing right now?
+
+---
+
+### How I Prioritize Workloads
+When I’m juggling multiple projects—like building new features for Tuon, handling freelance client requests, and keeping up with school—I rely on a few key strategies:
+
+1. **Start with impact:** I always ask, “Which task will make the biggest difference for users or the business?” For example, when launching Tuon, I prioritized core features like flashcard generation and billing before polishing the UI.
+
+2. **Break things down:** I split big goals into smaller, actionable tasks. This helps me avoid overwhelm and makes it easier to track progress. I use checklists and kanban boards (even simple ones in Notion or Trello) to visualize what’s next.
+
+3. **Set clear deadlines:** I assign realistic deadlines based on urgency and dependencies. If a freelance client needs a site live for a promo, that gets bumped up. For my own projects, I set internal milestones to keep momentum.
+
+4. **Balance quick wins and long-term goals:** I mix in small, high-impact fixes (like bug squashes or UI tweaks) with bigger, strategic work. This keeps motivation high and ensures steady progress.
+
+5. **Communicate and adjust:** I keep clients and collaborators updated, and I’m not afraid to renegotiate timelines if something urgent comes up. I’d rather deliver quality work than rush and cut corners.
+
+**In short:** I prioritize by impact, break work into manageable pieces, set deadlines, and stay flexible—always keeping the end user and business goals in mind.
+
+---
