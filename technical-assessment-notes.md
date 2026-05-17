@@ -404,6 +404,11 @@ I’m comfortable working independently or as part of a team. I value clear comm
 
 ---
 
+
+Good morning! I’m Jade, a student founder and solo developer from Cebu. I’ve been building web projects since college, including my own SaaS platform for online education called Tuon. I enjoy working with React, TypeScript, and modern web tools, and I’ve also led student organizations, so I’m used to collaborating and solving real problems.
+
+I’m applying for this Junior Full Stack Developer role at People Dynamics because I want to grow my skills in a professional environment, work with a team, and learn from experienced developers. I’m excited about the chance to contribute to real-world projects and bring my passion for building useful, user-friendly software to your company.
+
 ### How I Prioritize Workloads
 When I’m juggling multiple projects—like building new features for Tuon, handling freelance client requests, and keeping up with school—I rely on a few key strategies:
 
@@ -420,3 +425,16 @@ When I’m juggling multiple projects—like building new features for Tuon, han
 **In short:** I prioritize by impact, break work into manageable pieces, set deadlines, and stay flexible—always keeping the end user and business goals in mind.
 
 ---
+
+### Overcoming Payment Integration Challenges
+One of my main challenges was implementing robust payment logic for Tuon. I needed to ensure secure, reliable transactions while integrating with local payment providers like PayMongo. This involved handling edge cases such as payment failures, retries, and ensuring compliance with local regulations. I also had to design the system to be scalable and user-friendly, so users could easily subscribe or make payments without friction. Overcoming these challenges helped me strengthen my skills in secure API integration, error handling, and user experience design for financial workflows.
+
+### My Approach to Scalable and Secure System Design
+To design a system that is scalable and secure, I focus on these key principles:
+
+- **Modular Architecture:** I break the system into independent, reusable components (such as microservices or well-structured modules) so each part can scale independently as demand grows.
+- **Use of Cloud Services:** I leverage cloud platforms (like AWS, Azure, or Vercel) for auto-scaling, load balancing, and managed databases, which handle increased traffic and provide redundancy.
+- **Secure Data Handling:** I implement strong authentication (OAuth, JWT), encrypt sensitive data in transit (HTTPS/TLS) and at rest, and follow the principle of least privilege for user roles and API access.
+- **Input Validation & Error Handling:** I validate all user input to prevent attacks (like SQL injection, XSS) and handle errors gracefully to avoid exposing sensitive information.
+- **Monitoring & Logging:** I set up monitoring, logging, and alerting to detect issues early and respond quickly to security threats or performance bottlenecks.
+- **Regular Updates & Audits:** I keep dependencies updated and perform regular security audits to patch vulnerabilities and ensure compliance.
