@@ -12,7 +12,7 @@ export const SITE = {
   handle:    "jade",
   headline:  "Building education software that gets used.",
   subheadline:
-    "Student founder from Cebu, Philippines. My current focus is Tuon, an AI-powered study platform I'm building from the ground up: product, code, operations, and everything in between.",
+    "Junior Full Stack Developer at Digital Benefits Pte. Ltd. and student founder from Cebu, Philippines. My current focus is Tuon, an AI-powered study platform I'm building from the ground up: product, code, operations, and everything in between.",
 
   location: "Cebu, Philippines",
   businessEntity: "Armonia Information Technology Services",
@@ -200,16 +200,28 @@ export const PHILOSOPHY = [
   },
 ];
 
+// ── Experience ──────────────────────────────
+export const EXPERIENCE = [
+  {
+    company:  "Digital Benefits Pte. Ltd.",
+    role:     "Junior Full Stack Developer",
+    period:   "May 2026 – Present",
+    location: "Remote",
+    type:     "Full-time",
+  },
+];
+
 // ── About section ────────────────────────────
 export const ABOUT = {
   short:
-    "I'm a student and founder based in Cebu, Philippines. I started building Tuon because I wanted a study tool that actually worked, and because I wanted to know if I could ship a real product from scratch.",
+    "I'm a Junior Full Stack Developer at Digital Benefits Pte. Ltd. and a student founder based in Cebu, Philippines. I started building Tuon because I wanted a study tool that actually worked, and because I wanted to know if I could ship a real product from scratch.",
   extended: [
     "Outside of building Tuon, I've been involved in projects for my university department and served as a student leader in the SBO. I've been on the Dean's List and graduated with honors, though I take more pride in what I've shipped than the grades on the paper.",
     "What I've found is that building software seriously is its own education. Every product decision forces clarity. Every integration teaches you something new. Every user interaction shows you where you made the wrong assumption.",
     "I work across the full product surface: frontend code, database design, API integrations, payment flows, legal pages, deployment, and the operational discipline that any real software requires. Not because I can do everything perfectly, but because understanding the whole system makes every part of it better.",
   ],
   tags: [
+    "Junior Full Stack Developer",
     "Student Founder",
     "Dean's Lister",
     "Honor Student",

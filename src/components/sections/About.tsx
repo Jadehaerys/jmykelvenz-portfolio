@@ -1,6 +1,6 @@
 import { FadeIn } from "../ui/FadeIn";
 import { SectionLabel } from "../ui/SectionLabel";
-import { ABOUT, SITE } from "../../data/config";
+import { ABOUT, EXPERIENCE, SITE } from "../../data/config";
 
 export function About() {
   return (
@@ -94,6 +94,32 @@ export function About() {
                   >
                     {tag}
                   </span>
+                ))}
+              </div>
+
+              {/* Experience */}
+              <div className="pt-4 space-y-3">
+                <p className="font-body text-xs font-semibold tracking-[0.12em] uppercase text-muted">
+                  Experience
+                </p>
+                {EXPERIENCE.map((job) => (
+                  <div
+                    key={job.company}
+                    className="flex items-start gap-4 p-4 rounded-xl border border-border bg-surface-card"
+                  >
+                    <div className="mt-0.5 w-2 h-2 rounded-full flex-shrink-0" style={{ background: "var(--color-accent)" }} aria-hidden="true" />
+                    <div className="min-w-0">
+                      <p className="font-body font-semibold text-sm text-text">
+                        {job.role}
+                      </p>
+                      <p className="font-body text-sm text-muted">
+                        {job.company}
+                      </p>
+                      <p className="font-body text-xs text-muted opacity-70 mt-0.5">
+                        {job.period} · {job.type} · {job.location}
+                      </p>
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>

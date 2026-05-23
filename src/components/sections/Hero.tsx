@@ -76,7 +76,7 @@ export function Hero() {
           <motion.div variants={item} className="mb-6">
             <span className="inline-flex items-center gap-2 font-body font-semibold text-xs tracking-[0.14em] uppercase text-muted">
               <span className="block h-px w-6 bg-muted" aria-hidden="true" />
-              Student founder · Cebu, Philippines
+              Junior Full Stack Developer · Student Founder · Cebu, Philippines
             </span>
           </motion.div>
 

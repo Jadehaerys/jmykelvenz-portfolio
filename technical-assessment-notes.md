@@ -439,4 +439,6 @@ To design a system that is scalable and secure, I focus on these key principles:
 - **Monitoring & Logging:** I set up monitoring, logging, and alerting to detect issues early and respond quickly to security threats or performance bottlenecks.
 - **Regular Updates & Audits:** I keep dependencies updated and perform regular security audits to patch vulnerabilities and ensure compliance.
 
+
+
 A webhook is an automated, event-driven method for two applications to communicate with each other.
