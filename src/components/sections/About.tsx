@@ -10,7 +10,7 @@ export function About() {
       aria-labelledby="about-heading"
     >
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
 
           {/* ── Photo column ── */}
           <FadeIn direction="left">
@@ -19,12 +19,13 @@ export function About() {
                 <img
                   src={ABOUT.photo}
                   alt={`${SITE.shortName} — founder photo`}
-                  className="w-72 h-72 md:w-80 md:h-80 rounded-2xl object-cover border border-border shadow-lg"
+                  className="w-full max-w-sm rounded-3xl object-cover border border-border shadow-xl"
+                  style={{ aspectRatio: "3 / 4", objectPosition: "center 18%" }}
                 />
               ) : (
                 /* Placeholder — replace ABOUT.photo in config.ts with your image path */
                 <div
-                  className="w-72 h-72 md:w-80 md:h-80 rounded-2xl border border-border bg-surface-card flex flex-col items-center justify-center gap-3 relative overflow-hidden"
+                  className="w-full max-w-sm rounded-3xl border border-border bg-surface-card flex flex-col items-center justify-center gap-3 relative overflow-hidden" style={{ aspectRatio: '3 / 4' }}
                   role="img"
                   aria-label="Profile photo placeholder"
                 >
@@ -60,7 +61,7 @@ export function About() {
 
           {/* ── Text column ── */}
           <FadeIn direction="right">
-            <div className="space-y-6">
+            <div className="space-y-6 md:sticky md:top-28">
               <SectionLabel>About</SectionLabel>
 
               <h2
