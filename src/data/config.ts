@@ -150,7 +150,7 @@ export const CAPABILITIES = [
     icon: "globe",
     title: "Deployment & Product Operations",
     description:
-      "Shipping on Vercel, managing environments, handling secrets responsibly, and maintaining production uptime discipline.",
+      "Shipping on Vercel, managing environments with Railway and Cloudflare, handling secrets responsibly, and maintaining production uptime discipline.",
   },
   {
     icon: "file",

@@ -441,4 +441,9 @@ To design a system that is scalable and secure, I focus on these key principles:
 
 
 
+I’m Jade Mykel Ventic, a Junior Full Stack Developer and student founder based in Cebu, Philippines. I currently work at Digital Benefits Pte. Ltd. and also build Tuon, an AI-powered study platform that I’ve developed from the ground up, covering everything from frontend and backend work to payments, deployment, and product operations. I focus on creating practical, user-friendly software that solves real problems, and I’m looking for a part-time role where I can contribute to meaningful products while continuing to grow as a developer.
+
+
+
+
 A webhook is an automated, event-driven method for two applications to communicate with each other.
