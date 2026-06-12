@@ -409,6 +409,8 @@ Good morning! I’m Jade, a student founder and solo developer from Cebu. I’ve
 
 I’m applying for this Junior Full Stack Developer role at People Dynamics because I want to grow my skills in a professional environment, work with a team, and learn from experienced developers. I’m excited about the chance to contribute to real-world projects and bring my passion for building useful, user-friendly software to your company.
 
+
+
 ### How I Prioritize Workloads
 When I’m juggling multiple projects—like building new features for Tuon, handling freelance client requests, and keeping up with school—I rely on a few key strategies:
 
@@ -424,10 +426,12 @@ When I’m juggling multiple projects—like building new features for Tuon, han
 
 **In short:** I prioritize by impact, break work into manageable pieces, set deadlines, and stay flexible—always keeping the end user and business goals in mind.
 
----
+
 
 ### Overcoming Payment Integration Challenges
 One of my main challenges was implementing robust payment logic for Tuon. I needed to ensure secure, reliable transactions while integrating with local payment providers like PayMongo. This involved handling edge cases such as payment failures, retries, and ensuring compliance with local regulations. I also had to design the system to be scalable and user-friendly, so users could easily subscribe or make payments without friction. Overcoming these challenges helped me strengthen my skills in secure API integration, error handling, and user experience design for financial workflows.
+
+
 
 ### My Approach to Scalable and Secure System Design
 To design a system that is scalable and secure, I focus on these key principles:
@@ -442,7 +446,6 @@ To design a system that is scalable and secure, I focus on these key principles:
 
 
 I’m Jade Mykel Ventic, a Junior Full Stack Developer and student founder based in Cebu, Philippines. I currently work at Digital Benefits Pte. Ltd. and also build Tuon, an AI-powered study platform that I’ve developed from the ground up, covering everything from frontend and backend work to payments, deployment, and product operations. I focus on creating practical, user-friendly software that solves real problems, and I’m looking for a part-time role where I can contribute to meaningful products while continuing to grow as a developer.
-
 
 
 
