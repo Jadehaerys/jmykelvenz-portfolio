@@ -236,6 +236,42 @@ export const ABOUT = {
 // ── Other Projects ──────────────────────────
 export const OTHER_PROJECTS = [
   {
+    title: "VAMP Productions Platform",
+    description:
+      "A bespoke operations platform for VAMP Productions, a Singapore-based live music agency, replacing a manual Excel-and-phone-call workflow. The ops team manages gigs end to end — creating events, slotting ~100 roster musicians through a lineup auto-fill engine, sending WhatsApp invitations via GoHighLevel, and tracking confirmations, declines, and two-cycle payment runs. Musicians get a self-service portal to view bookings, set availability, and message the team. Built around five role-scoped surfaces — Command Centre, Monthly Schedule, Gig Chats, Musician Portal, and Lineup Engine — with magic-link onboarding and role-based access (MASTER, OPS, DESIGNER, MUSICIAN).",
+    url: "https://vamp.wibiz.ai",
+    role: "Lead Developer",
+    tags: ["Next.js 15", "TypeScript", "Prisma", "PostgreSQL", "Railway", "GoHighLevel"],
+    status: "Live",
+  },
+  {
+    title: "AutoSales AI Portal",
+    description:
+      "A two-sided partner portal for an AI sales reseller program. Agents onboard and track leads, referral links, commissions, and their upline/downline team. Admins review and approve agents, attribute leads by referral code, and manage commission payouts. Webhook-driven sales events feed a payout state machine, with contacts, tags, and pipeline data synced to GoHighLevel.",
+    url: "https://agents.autosales.wibiz.ai",
+    role: "Lead Developer",
+    tags: ["React", "TypeScript", "Express", "PostgreSQL", "GoHighLevel"],
+    status: "Live",
+  },
+  {
+    title: "BorderlessClub",
+    description:
+      "A premium golf club tee-time booking and membership management platform with three role-scoped surfaces: a passwordless member portal (magic-link) for requesting and tracking tee times, a passwordless course-staff portal for confirming or declining bookings, and an ops admin dashboard for managing bookings, members, courses, and approvals — with CRM automation running silently in the background.",
+    url: "https://borderlessclub.wibiz.ai",
+    role: "Lead Developer",
+    tags: ["React", "TypeScript", "Express", "PostgreSQL", "Railway", "GoHighLevel"],
+    status: "Live",
+  },
+  {
+    title: "ApexLynx",
+    description:
+      "A multi-portal operations platform for a leisure and membership-card program, with role-scoped access across super-admin, admin, command-centre, club, and cardmember surfaces. The Command Centre dashboard drives daily operations with real-time polling, SLA auto-flagging, and webhook integrations. Staff access is token- and credential-based with HMAC-signed session management.",
+    url: "https://apexlynx.com",
+    role: "Full Stack Developer",
+    tags: ["Node.js", "MySQL", "Webhooks", "RBAC", "Railway"],
+    status: "Live",
+  },
+  {
     title: "PSITS Voting System",
     description:
       "An online voting platform built for the Philippine Society of Information Technology Students at my university. Used by the department to elect new officers each year. Built as a collaborative project with fellow developers.",
