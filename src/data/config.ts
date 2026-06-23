@@ -20,7 +20,7 @@ export const SITE = {
   // ── Contact & Socials ─────────────────────
   // Replace placeholder hrefs with your real URLs before deploying.
   contact: {
-    email:        "support@tuon.net",
+    email:        "jmykelvenz@gmail.com",
     github:       "https://github.com/Jadehaerys",
     linkedin:     "https://linkedin.com/in/jade-mykel-r-ventic-71bb582a2",
     facebook:     "https://www.facebook.com/jade.mykel",
