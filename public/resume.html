@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jade Mykel R. Ventic � Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* -- Page setup --------------------------- */
+    @page {
+      size: Legal portrait;
+      margin: 0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 8pt;
+      line-height: 1.35;
+      color: #1C1916;
+      background: #fff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* -- Layout -------------------------------- brah*/
+    .page {
+      width: 8.5in;
+      min-height: 14in;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    /* -- Utility classes ----------------------- */
+
+    /* -- Header ------------------------------- */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: #2A6B57;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 0;
+    }
+
+    .header-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 15%;
+      border: 3px solid rgba(255,255,255,0.5);
+      flex-shrink: 0;
+    }
+
+    .header-info { flex: 1; }
+
+    .header-name {
+      font-size: 19pt;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      line-height: 1.1;
+      color: #fff;
+    }
+
+    .header-title {
+      font-size: 9pt;
+      opacity: 0.85;
+      margin-top: 2px;
+      margin-bottom: 6px;
+    }
+
+    .header-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px 16px;
+      font-size: 7.5pt;
+      opacity: 0.9;
+    }
+
+    .header-contacts a { color: #fff; text-decoration: none; }
+
+    /* -- Body columns -------------------------- */
+    .body {
+      display: flex;
+      flex: 1;
+      min-height: 0;
+      gap: 0;
+      border: none;
+      overflow: hidden;
+    }
+
+    /* -- Left sidebar -------------------------- */
+    .sidebar {
+      width: 2.3in;
+      flex-shrink: 0;
+      background: #F0EBE2;
+      padding: 7px 14px;
+      border-right: 1px solid #DDD6CE;
+      overflow: hidden;
+    }
+
+    /* -- Main content -------------------------- */
+    .main {
+      flex: 1;
+      min-width: 0;
+      padding: 7px 18px;
+      background: #F8F5EF;
+      overflow: hidden;
+    }
+
+    /* -- Section headings ---------------------- */
+    .section-title {
+      font-size: 7pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #C05A2A;
+      margin-bottom: 5px;
+      padding-bottom: 2px;
+      border-bottom: 1.5px solid #DDD6CE;
+    }
+
+    .section { margin-bottom: 3px; }
+
+    /* -- Skills -------------------------------- */
+    .skill-item { margin-bottom: 2px; }
+
+    .skill-name {
+      font-size: 8pt;
+      font-weight: 600;
+      color: #2A6B57;
+    }
+
+    .skill-detail {
+      font-size: 7.5pt;
+      color: #7A726A;
+    }
+
+    /* -- Education ----------------------------- */
+    .edu-item {
+      font-size: 8pt;
+      margin-bottom: 4px;
+      color: #1C1916;
+    }
+
+    .edu-item span { font-weight: 600; }
+
+    /* -- Values -------------------------------- */
+    .value-item {
+      font-size: 7.8pt;
+      padding: 1px 0 1px 8px;
+      color: #1C1916;
+      border-left: 2px solid #2A6B57;
+      margin-bottom: 2px;
+    }
+
+    /* -- Profile text -------------------------- */
+    .profile-text {
+      font-size: 8pt;
+      color: #1C1916;
+      line-height: 1.4;
+    }
+
+    /* -- Projects ------------------------------ */
+    .project {
+      margin-bottom: 3px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #DDD6CE;
+    }
+
+    .project:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .project-header {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .project-title {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #2A6B57;
+    }
+
+    .project-role {
+      font-size: 7.5pt;
+      color: #7A726A;
+    }
+
+    .project-url {
+      font-size: 7.5pt;
+      color: #C05A2A;
+      text-decoration: none;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    .project-desc {
+      font-size: 8pt;
+      color: #1C1916;
+      margin-top: 1px;
+      line-height: 1.4;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-top: 2px;
+    }
+
+    .tag {
+      font-size: 7pt;
+      font-weight: 600;
+      background: #EDE7DE;
+      color: #2A6B57;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    /* -- Download button ----------------------- */
+    .download-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #2A6B57;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 18px;
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 8.5pt;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 12px rgba(42,107,87,0.25);
+      letter-spacing: 0.2px;
+      transition: background 0.15s;
+    }
+    .download-btn:hover { background: #1e5040; }
+    @media print { .download-btn { display: none !important; } }
+
+    /* -- Screen preview ------------------------ */
+    @media screen {
+      body { background: #888; padding: 24px; }
+      .page { box-shadow: 0 4px 32px rgba(0,0,0,0.25); }
+    }
+
+    /* -- Print overrides ----------------------- */
+    @media print {
+      html, body {
+        height: 100%;
+        background: #fff !important;
+        padding: 0;
+        margin: 0;
+      }
+      .page {
+        width: 100%;
+        height: 100%;
+        min-height: unset;
+        margin: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .header { border-radius: 0 !important; flex-shrink: 0; }
+      .body {
+        border-radius: 0 !important;
+        flex: 1;
+        min-height: 0;
+        display: flex;
+        border: none;
+      }
+      .sidebar {
+        background: #F0EBE2 !important;
+        overflow: hidden;
+      }
+      .main {
+        background: #F8F5EF !important;
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="download-btn" onclick="window.print()" aria-label="Print or Save as PDF">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Save as PDF
+  </button>
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="public/Resume.jpg" alt="Jade Mykel R. Ventic" class="header-photo" onerror="this.style.display='none'" />
+      <div class="header-info">
+        <div class="header-name">Jade Mykel R. Ventic</div>
+        <div class="header-title">Junior Full Stack Developer &nbsp;&middot;&nbsp; Student Founder &nbsp;&middot;&nbsp; Cebu, Philippines</div>
+        <div class="header-contacts">
+          <span>&#128222; +63 991 569 6218</span>
+          <a href="mailto:jmykelvenz@gmail.com">jmykelvenz@gmail.com</a>
+          <a href="https://github.com/Jadehaerys">github.com/Jadehaerys</a>
+          <a href="https://jmykelvenz-portfolio.vercel.app">jmykelvenz-portfolio.vercel.app</a>
+          <a href="https://armoniait.com">armoniait.com</a>
+        </div>
+        <div class="header-summary" style="margin-top:5px; font-size:7.5pt; color:#F8F5EF;">
+          <strong>Objective:</strong> Full Stack Developer specializing in SaaS platforms, AI integrations, and multi-tenant architecture. Experienced in shipping real products from ideation to production using React, TypeScript, Supabase, Node.js, and Railway.
+        </div>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="body">
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+
+        <div class="section">
+          <div class="section-title">Skills</div>
+          <div class="skill-item">
+            <div class="skill-name">Frontend Development</div>
+            <div class="skill-detail">React, Vite, TypeScript, Tailwind CSS, Framer Motion</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Interface Design Thinking</div>
+            <div class="skill-detail">UX flows, information architecture, visual hierarchy</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Auth &amp; Account Flows</div>
+            <div class="skill-detail">Supabase, session management, user lifecycle</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">AI-Powered Workflows</div>
+            <div class="skill-detail">LLM integration, Groq API, structured prompting</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Payment Integration</div>
+            <div class="skill-detail">PayMongo, subscriptions, credit top-ups</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Deployment &amp; Ops</div>
+            <div class="skill-detail">Vercel, Railway, Cloudflare, environment management, production uptime</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Backend &amp; APIs</div>
+            <div class="skill-detail">Node.js, REST APIs, Webhooks, WhatsApp Cloud API, Google Calendar API</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Multi-tenant SaaS</div>
+            <div class="skill-detail">Multi-tenant architecture, PostgreSQL RLS, Supabase Edge Functions</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Monitoring &amp; Debugging</div>
+            <div class="skill-detail">Production debugging, SLA monitoring, error tracking</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Privacy &amp; Compliance</div>
+            <div class="skill-detail">Legal pages, PDPA-aware data handling</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Product Thinking</div>
+            <div class="skill-detail">Feature scoping, tradeoffs, full-cycle execution</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Programming Languages</div>
+            <div class="skill-detail">Java, C#, Python, JavaScript, TypeScript, PHP, HTML, CSS, Laravel</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">CRM &amp; Marketing Platforms</div>
+            <div class="skill-detail">Go High Level (GHL) &mdash; Proficient</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Database &amp; Tools</div>
+            <div class="skill-detail">MySQL, SQLite, PostgreSQL, Git, Figma, Canva</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Languages</div>
+            <div class="skill-detail">English, Filipino, Bisaya &mdash; Fluent</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="edu-item" style="margin-bottom:7px;">
+            <span>BS Information Technology</span>
+            <div style="font-size:7.5pt; color:#7A726A;">University of Cebu Lapu-Lapu &amp; Mandaue</div>
+            <div style="font-size:7.5pt; color:#7A726A;">2023 &ndash; Present &nbsp;&bull;&nbsp; GWA: 1.3</div>
+            <div style="font-size:7.5pt; color:#2A6B57;">Dean&rsquo;s Lister &bull; Student Leader / SBO</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:7px;">
+            <span>Senior High School</span>
+            <div style="font-size:7.5pt; color:#7A726A;">University of Cebu Lapu-Lapu &amp; Mandaue</div>
+            <div style="font-size:7.5pt; color:#2A6B57;">Graduated with Honors</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Principles</div>
+          <div class="value-item">Build things that are actually useful</div>
+          <div class="value-item">Reduce friction at every step</div>
+          <div class="value-item">Ship with intention, not just speed</div>
+          <div class="value-item">Design for the person using it</div>
+          <div class="value-item">Own the full stack</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Certifications &amp; Awards</div>
+          <div class="edu-item" style="margin-bottom:5px;">
+            <span>Cisco Cybersecurity</span>
+            <div style="font-size:7.5pt; color:#7A726A;">Introduction to Cybersecurity &mdash; Cisco</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:5px;">
+            <span style="color:#C05A2A;">4th Place &mdash; 12th UC Hackathon</span>
+            <div style="font-size:7.5pt; color:#7A726A;">ICT Congress &mdash; University of Cebu</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:5px;">
+            <span style="color:#C05A2A;">3rd Place &mdash; Hackathon Challenge</span>
+            <div style="font-size:7.5pt; color:#7A726A;">CCS Innovation Days &mdash; UCLM</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:3px;">
+            <span>Anthropic Academy</span>
+            <div style="font-size:7.5pt; color:#7A726A;">May 2026</div>
+          </div>
+          <div style="font-size:7pt; color:#1C1916; padding-left:4px; line-height:1.5;">
+            <div>&bull; AI Fluency: Framework &amp; Foundations <span style="color:#7A726A;">(10/10)</span></div>
+            <div>&bull; Building with the Claude API</div>
+            <div>&bull; Claude 101</div>
+            <div>&bull; Claude Code 101</div>
+            <div>&bull; Introduction to Agent Skills</div>
+            <div>&bull; Introduction to Claude Cowork</div>
+            <div>&bull; Introduction to Subagents</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAIN -->
+      <div class="main">
+
+        <div class="section">
+          <div class="section-title">Profile</div>
+          <div class="profile-text">
+            Junior Full Stack Developer at Digital Benefits Pte. Ltd. and student founder passionate about building education technology that gets used. Experienced in shipping real products from scratch, from frontend development to deployment, payments, and compliance. Dean&rsquo;s Lister, honor graduate, and student leader who takes more pride in what&rsquo;s shipped than grades on paper.
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Work Experience</div>
+          <div class="edu-item" style="margin-bottom:5px;">
+            <span>Junior Full Stack Developer &mdash; Digital Benefits Pte. Ltd.</span>
+            <div style="font-size:7.5pt; color:#7A726A;">Remote &nbsp;&bull;&nbsp; Singapore</div>
+            <div style="font-size:7.5pt; color:#2A6B57;">May 2026 &ndash; Present &nbsp;&bull;&nbsp; Full-time</div>
+            <div style="font-size:7.5pt; color:#1C1916;">Building and maintaining multi-tenant web applications. Working with Supabase, Railway, Cloudflare, REST APIs, webhooks, and AI integrations in a production SaaS environment. Part of the dev approval team &mdash; all dev handovers reviewed and approved by me and two others to ensure continuity and prevent bottlenecks.</div>
+            <div style="font-size:7pt; color:#2A6B57; margin-top:2px;">Lead developer on <a href="https://agents.autosales.wibiz.ai" style="color:#C05A2A; text-decoration:none;">AutoSales AI</a> and <a href="https://borderlessclub.wibiz.ai" style="color:#C05A2A; text-decoration:none;">BorderlessClub</a>; full-stack developer on <a href="https://vamp.wibiz.ai" style="color:#C05A2A; text-decoration:none;">VAMP Productions</a>, with contributions to <a href="https://apexlynx.com" style="color:#C05A2A; text-decoration:none;">ApexLynx</a> (Command Centre) and <a href="https://scale360.wibiz.ai" style="color:#C05A2A; text-decoration:none;">Scale360</a> (multi-tenant CTA routing fix). Builds detailed below.</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:5px;">
+            <span>Founder &amp; Developer &mdash; Armonia Information Technology Services</span>
+            <div style="font-size:7.5pt; color:#7A726A;">Liloan, Cebu, Philippines &nbsp;&bull;&nbsp; <a href="https://armoniait.com" style="color:#C05A2A; text-decoration:none;">armoniait.com</a></div>
+            <div style="font-size:7.5pt; color:#2A6B57;">April 2026 &ndash; Present</div>
+            <div style="font-size:7.5pt; color:#1C1916;">Founded and operate a BIR-registered SaaS and web development business. Lead product development, client relations, and business compliance as a sole proprietor. Primary product: Tuon, an AI-powered online education platform.</div>
+          </div>
+          <div class="edu-item" style="margin-bottom:5px;">
+            <span>Freelance Web Developer</span>
+            <div style="font-size:7.5pt; color:#7A726A;">Remote / Cebu, Philippines</div>
+            <div style="font-size:7.5pt; color:#2A6B57;">2024 &ndash; Present</div>
+            <div style="font-size:7.5pt; color:#1C1916;">Built and deployed websites for local businesses and student organizations. Focused on modern, responsive design and client satisfaction.</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Projects</div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">Tuon</span>
+              <span class="project-role">Founder &amp; Developer</span>
+              <a class="project-url" href="https://tuon.net">tuon.net</a>
+            </div>
+            <div class="project-desc">
+              AI-powered study platform transforming any learning material into active practice. Generates flashcards and quizzes from typed topics, PDFs, or YouTube links. Features AI tutor chat, study decks, subscription billing, multi-tenant architecture, Edge Functions, and webhook handling. Built and deployed end-to-end solo.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">• 1,000+ registered users in first 3 months &bull; 99.9% uptime on Vercel<br>• Groq API for LLM &bull; Supabase Edge Functions &bull; Webhook event handling</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Groq</span>
+              <span class="tag">PayMongo</span>
+              <span class="tag">Edge Functions</span>
+              <span class="tag">Webhooks</span>
+              <span class="tag">Multi-tenant</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">VAMP Productions Platform</span>
+              <span class="project-role">Lead Developer</span>
+              <a class="project-url" href="https://vamp.wibiz.ai">vamp.wibiz.ai</a>
+            </div>
+            <div class="project-desc">
+              Bespoke operations platform for a Singapore-based live music agency, replacing a manual Excel-and-phone-call workflow. The ops team runs gigs end-to-end &mdash; event creation, slotting ~100 roster musicians via a lineup auto-fill engine, WhatsApp invitations through GoHighLevel, and confirmation/decline and two-cycle payment tracking. Musicians get a self-service portal for bookings, availability, and chat.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">&bull; Five role-scoped surfaces with magic-link onboarding &amp; RBAC (MASTER / OPS / DESIGNER / MUSICIAN)<br>&bull; GoHighLevel + Make.com webhook automation &bull; Prisma + PostgreSQL on Railway</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Next.js 15</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Railway</span>
+              <span class="tag">GoHighLevel</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">AutoSales AI Portal</span>
+              <span class="project-role">Lead Developer</span>
+              <a class="project-url" href="https://agents.autosales.wibiz.ai">autosales.wibiz.ai</a>
+            </div>
+            <div class="project-desc">
+              A two-sided partner portal for an AI sales reseller program. Agents onboard and track leads, referral links, commissions, and their upline/downline team; admins review and approve agents, attribute leads by referral code, and manage commission payouts. Webhook-driven sales events feed a payout state machine, with contacts, tags, and pipeline data synced to GoHighLevel.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">&bull; Agent hierarchy, referral attribution, and commission/payout tracking<br>&bull; React + Vite + Express + PostgreSQL &bull; recharts dashboards, S3 uploads, rate-limited auth</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Vite</span>
+              <span class="tag">GoHighLevel</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">BorderlessClub</span>
+              <span class="project-role">Lead Developer</span>
+              <a class="project-url" href="https://borderlessclub.wibiz.ai">borderlessclub.wibiz.ai</a>
+            </div>
+            <div class="project-desc">
+              A premium golf club tee-time booking and membership management platform with three role-scoped surfaces: a passwordless member portal (magic-link) for requesting and tracking tee times, a passwordless course-staff portal for confirming or declining bookings, and an ops admin dashboard for managing bookings, members, courses, and approvals.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">&bull; Full platform build-out with passwordless magic-link portals and background CRM automation<br>&bull; React + Vite + Express + PostgreSQL on Railway &bull; connect-pg-simple sessions</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Railway</span>
+              <span class="tag">GoHighLevel</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">ApexLynx</span>
+              <span class="project-role">Full Stack Developer</span>
+              <a class="project-url" href="https://apexlynx.com">apexlynx.com</a>
+            </div>
+            <div class="project-desc">
+              A multi-portal operations platform for a leisure and membership-card program, with role-scoped access across super-admin, admin, command-centre, club, and cardmember surfaces. The Command Centre dashboard drives daily operations with real-time polling, SLA auto-flagging, and webhook integrations; staff access is token- and credential-based.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">&bull; Command Centre: real-time polling, SLA auto-flagging, webhook integrations<br>&bull; Node.js (native HTTP), MySQL 8, HMAC-signed session cookies, Railway</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Webhooks</span>
+              <span class="tag">RBAC</span>
+              <span class="tag">Railway</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <span class="project-title">PSITS Voting System</span>
+              <span class="project-role">Co-developer</span>
+              <a class="project-url" href="https://psits-voting.vercel.app">psits-voting.vercel.app</a>
+            </div>
+            <div class="project-desc">
+              Online voting platform for the Philippine Society of IT Students at my university. Used for annual officer elections. Collaborative project.<br>
+              <span style="color:#2A6B57; font-size:7.5pt;">• 500+ votes processed securely<br>• Reduced manual tallying time by 90%</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Vercel</span>
+              <span class="tag">Collaborative</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

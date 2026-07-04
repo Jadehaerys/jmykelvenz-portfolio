@@ -60,7 +60,17 @@ export function Navbar() {
         </ul>
 
         {/* ── Desktop CTA ── */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <Button
+            as="a"
+            href="/resume.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="ghost"
+            size="sm"
+          >
+            Resume
+          </Button>
           <Button
             as="a"
             href={SITE.contact.email ? `mailto:${SITE.contact.email}` : "#contact"}
@@ -115,7 +125,18 @@ export function Navbar() {
                 </li>
               ))}
             </ul>
-            <div className="mt-5 pt-5 border-t border-border">
+            <div className="mt-5 pt-5 border-t border-border flex flex-col gap-3">
+              <Button
+                as="a"
+                href="/resume.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="ghost"
+                size="md"
+                className="w-full"
+              >
+                Resume
+              </Button>
               <Button
                 as="a"
                 href={`mailto:${SITE.contact.email}`}
