@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FadeIn }       from "../ui/FadeIn";
 import { SectionLabel } from "../ui/SectionLabel";
 import { Icon }         from "../ui/Icon";
@@ -27,14 +28,11 @@ export function OtherProjects() {
 
         {/* ── Project cards ── */}
         <div className="grid sm:grid-cols-2 gap-5">
-          {OTHER_PROJECTS.map((project, i) => (
-            <FadeIn key={project.title} delay={i * 0.08}>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col justify-between h-full p-7 rounded-2xl bg-bg border border-border hover:border-accent/40 hover:shadow-sm transition-all duration-300"
-              >
+          {OTHER_PROJECTS.map((project, i) => {
+            const hasCaseStudy = "slug" in project && Boolean(project.slug);
+
+            const cardContent = (
+              <>
                 <div className="space-y-4">
                   {/* Top row */}
                   <div className="flex items-start justify-between gap-4">
@@ -57,13 +55,18 @@ export function OtherProjects() {
                         <span className="text-xs font-body text-muted">
                           {project.role}
                         </span>
+                        {hasCaseStudy && (
+                          <span className="text-xs font-body font-semibold text-warm">
+                            Case study
+                          </span>
+                        )}
                       </div>
                       <h3 className="font-display font-bold text-xl text-text leading-snug">
                         {project.title}
                       </h3>
                     </div>
                     <span className="text-muted group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200 flex-shrink-0 mt-1">
-                      <Icon name="external" size={18} />
+                      <Icon name={hasCaseStudy ? "arrowright" : "external"} size={18} />
                     </span>
                   </div>
 
@@ -83,9 +86,31 @@ export function OtherProjects() {
                     </span>
                   ))}
                 </div>
-              </a>
-            </FadeIn>
-          ))}
+              </>
+            );
+
+            const cardClassName =
+              "group flex flex-col justify-between h-full p-7 rounded-2xl bg-bg border border-border hover:border-accent/40 hover:shadow-sm transition-all duration-300";
+
+            return (
+              <FadeIn key={project.title} delay={i * 0.08}>
+                {hasCaseStudy ? (
+                  <Link to={`/projects/${project.slug}`} className={cardClassName}>
+                    {cardContent}
+                  </Link>
+                ) : (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cardClassName}
+                  >
+                    {cardContent}
+                  </a>
+                )}
+              </FadeIn>
+            );
+          })}
         </div>
       </div>
     </section>

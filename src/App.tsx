@@ -4,6 +4,7 @@ import { Navbar }          from "./components/layout/Navbar";
 import { Footer }          from "./components/layout/Footer";
 import { Home }            from "./pages/Home";
 import { TuonCaseStudy }   from "./pages/TuonCaseStudy";
+import { ProjectCaseStudy } from "./pages/ProjectCaseStudy";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ export default function App() {
       <Routes>
         <Route path="/"              element={<Home />} />
         <Route path="/projects/tuon" element={<TuonCaseStudy />} />
+        <Route path="/projects/:slug" element={<ProjectCaseStudy />} />
         {/* 404 fallback */}
         <Route path="*" element={
           <main id="main-content" className="min-h-screen flex flex-col items-center justify-center bg-bg gap-6 px-6">
