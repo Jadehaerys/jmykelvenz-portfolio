@@ -12,7 +12,7 @@ export const SITE = {
   handle:    "jade",
   headline:  "Building education software that gets used.",
   subheadline:
-    "Junior Full Stack Developer at Digital Benefits Pte. Ltd. and student founder from Cebu, Philippines. My current focus is Tuon, an AI-powered study platform I'm building from the ground up: product, code, operations, and everything in between.",
+    "Software AI Developer at Prime AI LLC and Full Stack Developer at Digital Benefits Pte. Ltd. Founder from Cebu, Philippines. My current focus is Tuon, an AI-powered study platform I'm building from the ground up: product, code, operations, and everything in between.",
 
   location: "Cebu, Philippines",
   businessEntity: "Armonia Information Technology Services",
@@ -203,8 +203,15 @@ export const PHILOSOPHY = [
 // ── Experience ──────────────────────────────
 export const EXPERIENCE = [
   {
+    company:  "Prime AI LLC",
+    role:     "Software AI Developer",
+    period:   "August 2026 – Present",
+    location: "Remote",
+    type:     "Full-time Contract",
+  },
+  {
     company:  "Digital Benefits Pte. Ltd.",
-    role:     "Junior Full Stack Developer",
+    role:     "Full Stack Developer",
     period:   "May 2026 – Present",
     location: "Remote",
     type:     "Full-time",
@@ -214,18 +221,18 @@ export const EXPERIENCE = [
 // ── About section ────────────────────────────
 export const ABOUT = {
   short:
-    "I'm a Junior Full Stack Developer at Digital Benefits Pte. Ltd. and a student founder based in Cebu, Philippines. I started building Tuon because I wanted a study tool that actually worked, and because I wanted to know if I could ship a real product from scratch.",
+    "I'm a Software AI Developer at Prime AI LLC, a Full Stack Developer at Digital Benefits Pte. Ltd., and founder of Armonia Information Technology Services, based in Cebu, Philippines. I started building Tuon because I wanted a study tool that actually worked, and because I wanted to know if I could ship a real product from scratch.",
   extended: [
-    "Outside of building Tuon, I've been involved in projects for my university department and served as a student leader in the SBO. I've been on the Dean's List and graduated with honors, though I take more pride in what I've shipped than the grades on the paper.",
+    "My team and I won Champions at the Paytaca CASH 3.0 Bitcoin Cash Hackathon 2026 with ReStart, a blockchain-powered rehabilitation credential platform we built in 48 hours. It is one of the projects I am most proud of, built under real pressure with real stakes.",
     "What I've found is that building software seriously is its own education. Every product decision forces clarity. Every integration teaches you something new. Every user interaction shows you where you made the wrong assumption.",
     "I work across the full product surface: frontend code, database design, API integrations, payment flows, legal pages, deployment, and the operational discipline that any real software requires. Not because I can do everything perfectly, but because understanding the whole system makes every part of it better.",
   ],
   tags: [
-    "Junior Full Stack Developer",
-    "Student Founder",
-    "Dean's Lister",
-    "Honor Student",
-    "Student Leader",
+    "Software AI Developer",
+    "Full Stack Developer",
+    "Founder",
+    "Hackathon Champion",
+    "AI-Assisted Development",
     "Cebu, Philippines",
     "Education Technology",
   ],
@@ -235,6 +242,15 @@ export const ABOUT = {
 
 // ── Other Projects ──────────────────────────
 export const OTHER_PROJECTS = [
+  {
+    title: "ReStart",
+    description:
+      "1st Place — Paytaca Cash 3.0 Bitcoin Cash Hackathon. A counselor-facing rehabilitation credential platform that writes verified program milestones permanently to the Bitcoin Cash blockchain via CashScript smart contracts. Case workers register patients, sign and record real-world milestones on-chain as they happen, and issue tamper-proof completion credentials when a program finishes. Anyone — an employer, parole board, or partner agency — can verify the credential directly against the blockchain with no login and no middleman. Sensitive counseling data stays off-chain in Supabase; only the milestone and completion events are locked on-chain, exactly the part that needs to be tamper-proof.",
+    url: "https://restart-bch.vercel.app",
+    role: "Developer",
+    tags: ["Next.js", "React", "Supabase", "Bitcoin Cash", "CashScript", "CashTokens", "Blockchain"],
+    status: "Live",
+  },
   {
     title: "VAMP Productions Platform",
     description:
