@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { SITE, TUON } from "../../data/config";
 import { Button } from "../ui/Button";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
+import { WireframeField } from "../three/WireframeField";
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -63,6 +64,9 @@ export function Hero() {
           }}
         />
       </div>
+
+      {/* ── Three.js wireframe field ── */}
+      <WireframeField className="opacity-70 mix-blend-multiply" />
 
       {/* ── Main content ── */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-8 pt-28 pb-20 md:pt-36 md:pb-28">
