@@ -63,7 +63,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <Button
             as="a"
-            href="/resume.html"
+            href="/ats-resume.html"
             target="_blank"
             rel="noopener noreferrer"
             variant="ghost"
@@ -128,7 +128,7 @@ export function Navbar() {
             <div className="mt-5 pt-5 border-t border-border flex flex-col gap-3">
               <Button
                 as="a"
-                href="/resume.html"
+                href="/ats-resume.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="ghost"
