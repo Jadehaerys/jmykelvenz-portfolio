@@ -10,9 +10,9 @@ export const SITE = {
   fullName:  "Jade Mykel R. Ventic",
   shortName: "Jade Ventic",
   handle:    "jade",
-  headline:  "Building education software that gets used.",
+  headline:  "Building the systems businesses run on.",
   subheadline:
-    "Software AI Developer at Prime AI LLC and Full Stack Developer at Digital Benefits Pte. Ltd. Founder from Cebu, Philippines. My current focus is Tuon, an AI-powered study platform I'm building from the ground up: product, code, operations, and everything in between.",
+    "Software AI Developer at Prime AI LLC and Full Stack Developer at Digital Benefits Pte. Ltd. Founder of Armonia Information Technology Services, based in Cebu, Philippines. I build full-stack applications, AI systems, and automation for businesses and enterprises, from internal tools that save real hours to client-facing products used by real customers.",
 
   location: "Cebu, Philippines",
   businessEntity: "Armonia Information Technology Services",
@@ -34,7 +34,6 @@ export const SITE = {
   // ── Navigation ────────────────────────────
   navLinks: [
     { label: "About",        href: "#about"        },
-    { label: "Tuon",         href: "#project"      },
     { label: "Projects",     href: "#other-projects" },
     { label: "Capabilities", href: "#capabilities"  },
     { label: "Contact",      href: "#contact"      },
@@ -227,20 +226,20 @@ export const EXPERIENCE = [
 // ── About section ────────────────────────────
 export const ABOUT = {
   short:
-    "I'm a Software AI Developer at Prime AI LLC, a Full Stack Developer at Digital Benefits Pte. Ltd., and founder of Armonia Information Technology Services, based in Cebu, Philippines. I started building Tuon because I wanted a study tool that actually worked, and because I wanted to know if I could ship a real product from scratch.",
+    "I'm a Software AI Developer at Prime AI LLC, a Full Stack Developer at Digital Benefits Pte. Ltd., and founder of Armonia Information Technology Services, based in Cebu, Philippines. My work centers on building full-stack applications, AI systems, and automation for businesses and enterprises: systems that save real hours, connect real data, and hold up under real usage, not just demos.",
   extended: [
     "My team and I won Champions at the Paytaca CASH 3.0 Bitcoin Cash Hackathon 2026 with ReStart, a blockchain-powered rehabilitation credential platform we built in 48 hours. It is one of the projects I am most proud of, built under real pressure with real stakes.",
     "What I've found is that building software seriously is its own education. Every product decision forces clarity. Every integration teaches you something new. Every user interaction shows you where you made the wrong assumption.",
-    "I work across the full product surface: frontend code, database design, API integrations, payment flows, legal pages, deployment, and the operational discipline that any real software requires. Not because I can do everything perfectly, but because understanding the whole system makes every part of it better.",
+    "I work across the full product surface: frontend code, database design, API integrations, AI and automation pipelines, payment flows, deployment, and the operational discipline that any real system requires. Not because I can do everything perfectly, but because understanding the whole system makes every part of it better.",
   ],
   tags: [
     "Software AI Developer",
     "Full Stack Developer",
     "Founder",
     "Hackathon Champion",
-    "AI-Assisted Development",
+    "AI Systems & Automation",
     "Cebu, Philippines",
-    "Education Technology",
+    "Enterprise Solutions",
   ],
   // Profile photo placed in public/ProfilePic.jpg
   photo: "/ProfilePic.jpg" as string | null,
@@ -248,6 +247,16 @@ export const ABOUT = {
 
 // ── Other Projects ──────────────────────────
 export const OTHER_PROJECTS = [
+  {
+    title: "Tuon",
+    slug: "tuon",
+    description:
+      "An AI-powered study platform that turns any learning material, a typed topic, a PDF, or a YouTube link, into flashcards and quizzes. Reached 1,000+ users within the first three months. Built and shipped solo end to end: frontend, backend, AI integration, subscription billing, and production deployment on Vercel and Supabase.",
+    url: TUON.url,
+    role: "Founder & Developer",
+    tags: ["React", "TypeScript", "Supabase", "Groq", "PayMongo", "Vercel"],
+    status: TUON.status,
+  },
   {
     title: "ReStart",
     slug: "restart",

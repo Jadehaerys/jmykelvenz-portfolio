@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { SITE, TUON } from "../../data/config";
+import { Link } from "react-router-dom";
+import { SITE } from "../../data/config";
 import { Button } from "../ui/Button";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
 import { WireframeField } from "../three/WireframeField";
@@ -89,12 +90,12 @@ export function Hero() {
             variants={item}
             className="font-display font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-[82px] leading-[1.03] tracking-tight text-text mb-6"
           >
-            Building education{" "}
+            Building the{" "}
             <span
               className="relative inline-block"
               style={{ color: "var(--color-accent)" }}
             >
-              software
+              systems
               {/* Underline accent */}
               <span
                 className="absolute bottom-0 left-0 w-full h-0.5 rounded-full opacity-60"
@@ -102,7 +103,7 @@ export function Hero() {
                 aria-hidden="true"
               />
             </span>
-            {" "}that gets used.
+            {" "}businesses run on.
           </motion.h1>
 
           {/* Subheadline */}
@@ -120,11 +121,11 @@ export function Hero() {
           >
             <Button
               as="a"
-              href="#project"
+              href="#other-projects"
               variant="primary"
               size="lg"
             >
-              View Tuon
+              See my work
             </Button>
             <Button
               as="a"
@@ -136,27 +137,25 @@ export function Hero() {
             </Button>
           </motion.div>
 
-          {/* Product status pill */}
+          {/* Credibility pill */}
           <motion.div variants={item} className="mt-10">
-            <a
-              href={TUON.url}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/projects/restart"
               className="inline-flex items-center gap-3 px-4 py-2.5 rounded-full border border-border bg-surface/60 hover:bg-surface-card transition-all duration-200 group"
             >
               <span
                 className="flex-shrink-0 w-2 h-2 rounded-full animate-pulse"
-                style={{ background: "var(--color-accent)" }}
+                style={{ background: "var(--color-warm)" }}
                 aria-hidden="true"
               />
               <span className="font-body text-sm text-text font-medium">
-                <span className="text-accent font-semibold">Tuon</span>
-                {" · "}{TUON.status}
+                <span className="text-warm font-semibold">Champions</span>
+                {" · "}Paytaca CASH 3.0 Hackathon 2026
               </span>
               <span className="text-muted text-xs group-hover:translate-x-0.5 transition-transform duration-200">
-                ↗
+                →
               </span>
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

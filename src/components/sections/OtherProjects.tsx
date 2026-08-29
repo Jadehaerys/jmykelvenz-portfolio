@@ -16,12 +16,12 @@ export function OtherProjects() {
         {/* ── Header ── */}
         <FadeIn>
           <div className="mb-12 md:mb-16">
-            <SectionLabel>Other Work</SectionLabel>
+            <SectionLabel>Selected Work</SectionLabel>
             <h2
               id="other-projects-heading"
               className="mt-4 font-display font-bold text-3xl md:text-4xl text-text leading-tight"
             >
-              More things I've built.
+              Systems, AI, and full-stack products I've shipped.
             </h2>
           </div>
         </FadeIn>
