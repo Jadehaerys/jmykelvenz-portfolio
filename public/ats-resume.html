@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jade Mykel R. Ventic - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: 8.5in 13in;
+      margin: 0.45in 0.55in;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.35;
+      color: #111;
+      background: #fff;
+    }
+
+    .page {
+      max-width: 8.5in;
+      min-height: 13in;
+      margin: 0 auto;
+      padding: 0.45in 0.55in;
+    }
+
+    .name {
+      font-size: 18pt;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 3px;
+    }
+
+    .contact {
+      font-size: 8.5pt;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contact a { color: #111; text-decoration: none; }
+
+    .section { margin-bottom: 9px; }
+
+    .section-title {
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #111;
+      padding-bottom: 1px;
+      margin-bottom: 5px;
+    }
+
+    .item { margin-bottom: 7px; }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+
+    .item-title { font-weight: 700; font-size: 9.5pt; }
+    .item-date { font-size: 8.5pt; color: #444; white-space: nowrap; }
+    .item-subtitle { font-size: 8.5pt; color: #444; margin-bottom: 2px; }
+
+    ul { padding-left: 14px; margin-top: 2px; }
+    ul li { font-size: 8.5pt; margin-bottom: 1px; }
+
+    .skills-grid { display: flex; flex-direction: column; gap: 2px; }
+    .skill-row { font-size: 8.5pt; }
+    .skill-row strong { font-weight: 600; }
+
+    .project-item { margin-bottom: 6px; }
+    .project-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+    .project-title { font-weight: 700; font-size: 9pt; }
+    .project-meta { font-size: 8pt; color: #444; }
+
+    .download-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 18px;
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 8.5pt;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+      transition: background 0.15s;
+    }
+    .download-btn:hover { background: #333; }
+
+    @media print {
+      .download-btn { display: none !important; }
+      .page { padding: 0; }
+      html, body { background: #fff !important; }
+    }
+
+    @media screen {
+      body { background: #888; padding: 24px; }
+      .page { box-shadow: 0 4px 32px rgba(0,0,0,0.25); background: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <button class="download-btn" onclick="window.print()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Save as PDF
+  </button>
+
+  <div class="page">
+
+    <div class="name">Jade Mykel R. Ventic</div>
+    <div class="contact">
+      Cebu, Philippines &nbsp;|&nbsp;
+      +63 991 569 6218 &nbsp;|&nbsp;
+      <a href="mailto:jmykelvenz@gmail.com">jmykelvenz@gmail.com</a> &nbsp;|&nbsp;
+      <a href="https://github.com/Jadehaerys">github.com/Jadehaerys</a> &nbsp;|&nbsp;
+      <a href="https://jmykelvenz-portfolio.vercel.app">jmykelvenz-portfolio.vercel.app</a> &nbsp;|&nbsp;
+      <a href="https://linkedin.com/in/jade-mykel-r-ventic-71bb582a2">linkedin.com/in/jade-mykel-r-ventic-71bb582a2</a>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Summary</div>
+      <p style="font-size:8.5pt;">Software AI Developer building and shipping client-facing products end-to-end using AI-assisted workflows and modern full-stack development. Experienced across web applications, automation pipelines, AI integrations, and third-party API connections with no fixed tech stack constraint. Founder of Armonia Information Technology Services and creator of Tuon, an AI-powered study platform with 1,000+ users. Hackathon champion with production-shipped projects used by real clients.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Software AI Developer</span>
+          <span class="item-date">August 2026 - Present</span>
+        </div>
+        <div class="item-subtitle">Prime AI LLC | Remote, United States | Full-time Contract</div>
+        <ul>
+          <li>Build and ship client-facing products end-to-end using AI-assisted development workflows with Claude Code as a primary force multiplier.</li>
+          <li>Work spans full-stack web applications, automation pipelines, and AI integrations across any required tech stack without constraint to a single framework.</li>
+          <li>Turn client requirements into production-ready software quickly, testing and iterating based on real feedback loops.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Full Stack Developer</span>
+          <span class="item-date">May 2026 - Present</span>
+        </div>
+        <div class="item-subtitle">Digital Benefits Pte. Ltd. | Remote, Singapore | Full-time</div>
+        <ul>
+          <li>Build and maintain multi-tenant production SaaS applications using React, TypeScript, Node.js, PostgreSQL, and Railway.</li>
+          <li>Lead developer on AutoSales AI (reseller portal with GHL CRM sync, referral attribution, commission tracking) and BorderlessClub (golf club membership platform with magic-link portals).</li>
+          <li>Built VAMP Productions: gig management platform for a live music agency with WhatsApp automation via GoHighLevel API and Make.com webhooks.</li>
+          <li>Part of a three-person dev approval team reviewing all handovers before deployment.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Founder and Developer</span>
+          <span class="item-date">April 2026 - Present</span>
+        </div>
+        <div class="item-subtitle">Armonia Information Technology Services | Liloan, Cebu | armoniait.com</div>
+        <ul>
+          <li>Founded and operate a BIR-registered IT and SaaS business. Lead developer of Tuon, an AI study platform with 1,000+ users, subscription billing, and LLM integrations.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Freelance Web Developer</span>
+          <span class="item-date">2024 - Present</span>
+        </div>
+        <div class="item-subtitle">Remote / Cebu, Philippines</div>
+        <ul>
+          <li>Built responsive websites for local Cebu businesses including e-commerce shops, restaurant sites, and service platforms with custom checkout flows and SEO optimization.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-row"><strong>Frontend:</strong> React, Next.js, Vite, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Framer Motion</div>
+        <div class="skill-row"><strong>Backend:</strong> Node.js, Express, REST APIs, Webhooks, PHP, Laravel, Python</div>
+        <div class="skill-row"><strong>Databases:</strong> PostgreSQL, MySQL, SQLite, Supabase, Prisma ORM, Drizzle ORM</div>
+        <div class="skill-row"><strong>AI and Integrations:</strong> Groq API, OpenAI API, Google AI SDK, ElevenLabs, Claude API, GoHighLevel API, Make.com, Stripe, PayMongo, AWS S3</div>
+        <div class="skill-row"><strong>AI Infrastructure:</strong> RAG pipelines, vector embeddings, document ingestion, MCP (Model Context Protocol) servers, AI agents</div>
+        <div class="skill-row"><strong>DevOps and Tools:</strong> Vercel, Railway, Cloudflare, Git, GitHub, Figma</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Projects</div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">ReStart - Blockchain Rehabilitation Credentials</span>
+          <span class="project-meta">restart-bch.vercel.app | Developer | Next.js, React, Supabase, Bitcoin Cash, CashScript, CashTokens</span>
+        </div>
+        <ul>
+          <li>1st Place Champions, Paytaca Cash 3.0 Bitcoin Cash Hackathon. Writes verified rehabilitation milestones permanently to the Bitcoin Cash blockchain via CashScript smart contracts. Tamper-proof public credential links verifiable against the blockchain with no login or middleman.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">Tuon - AI Study Platform</span>
+          <span class="project-meta">tuon.net | Founder and Developer | React, TypeScript, Supabase, Groq, PayMongo, Vercel</span>
+        </div>
+        <ul>
+          <li>Generates flashcards and quizzes from typed topics, PDFs, or YouTube links. 1,000+ users in first 3 months. Subscription billing, AI tutor chat, study decks, and production deployment end-to-end.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">VAMP Productions Platform</span>
+          <span class="project-meta">vamp.wibiz.ai | Lead Developer | Next.js 15, TypeScript, Prisma, PostgreSQL, Railway, GoHighLevel</span>
+        </div>
+        <ul>
+          <li>End-to-end gig management for a Singapore live music agency with 100+ roster musicians. WhatsApp invitation automation and webhook-driven confirmation tracking via GoHighLevel and Make.com.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">BizConnect360</span>
+          <span class="project-meta">scale360.wibiz.ai | Full Stack Developer | React 18, TypeScript, Drizzle ORM, PostgreSQL, AWS S3, Stripe, ElevenLabs</span>
+        </div>
+        <ul>
+          <li>Multi-tenant business platform with multi-LLM AI routing, ElevenLabs voice AI, Stripe billing, DocuSeal e-signatures, and AWS S3 file storage.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">BorderlessClub</span>
+          <span class="project-meta">borderlessclub.wibiz.ai | Lead Developer | React, TypeScript, Express, PostgreSQL, Railway, GoHighLevel</span>
+        </div>
+        <ul>
+          <li>Premium golf club tee-time booking and membership platform with three role-scoped portals: passwordless member portal (magic-link), course-staff confirmation portal, and ops admin dashboard. Background CRM automation via GoHighLevel.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">BS Information Technology</span>
+          <span class="item-date">2023 - Present</span>
+        </div>
+        <div class="item-subtitle">University of Cebu Lapu-Lapu and Mandaue | GWA: 1.3 | Dean's Lister | Student Leader / SBO | Senior High: Graduated with Honors</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Certifications and Awards</div>
+      <ul>
+        <li>Anthropic Academy (May 2026) - 7 courses including AI Fluency: Framework and Foundations (10/10), Building with the Claude API, Claude Code 101, Introduction to Agent Skills</li>
+        <li>Cisco Cybersecurity: Introduction to Cybersecurity</li>
+        <li>1st Place Champions - Paytaca Cash 3.0 Bitcoin Cash Hackathon (ReStart - blockchain rehabilitation credential platform)</li>
+        <li>4th Place, 12th UC Hackathon - ICT Congress, University of Cebu</li>
+        <li>3rd Place, Hackathon Challenge - CCS Innovation Days, UCLM</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -141,6 +141,12 @@ export const CAPABILITIES = [
       "Integrating large language models and external APIs to generate genuine educational value from raw, unstructured input.",
   },
   {
+    icon: "database",
+    title: "AI Brains for Businesses",
+    description:
+      "Turning a company's own documents, records, and knowledge into a queryable AI system: ingestion pipelines, vector embeddings, and retrieval-augmented generation, connected to real tools through MCP servers rather than a chatbot that only knows what it was trained on.",
+  },
+  {
     icon: "creditcard",
     title: "Subscription & Payment Integration",
     description:
